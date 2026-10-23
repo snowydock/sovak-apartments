@@ -10,14 +10,14 @@
 <style>
 :root{
   --bg:#f3f5f3; --surface:#ffffff; --ink:#1b2420; --muted:#5d6b64; --line:#d9e0dc;
-  --accent:#2f5d4a; --accent-soft:#e3ede7; --gone:#b5470f; --gone-ink:#ffffff;
+  --accent:#2f5d4a; --accent-soft:#e3ede7; --gone:#b5470f; --gone-ink:#ffffff; --gold:#b8892b;
   --f-display:"Newsreader", Georgia, "Times New Roman", serif;
   --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark){:root{
   --bg:#141a17; --surface:#1c2420; --ink:#e5ece8; --muted:#9aa9a1; --line:#2e3a34;
-  --accent:#8cc4a8; --accent-soft:#22332b; --gone:#f0894a; --gone-ink:#1c120b; color-scheme:dark}}
+  --accent:#8cc4a8; --accent-soft:#22332b; --gone:#f0894a; --gone-ink:#1c120b; --gold:#d9b25a; color-scheme:dark}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
@@ -70,6 +70,8 @@ a{color:var(--accent)}
 .person summary::before{content:"▸";color:var(--muted);transition:transform .15s}
 .person[open] summary::before{transform:rotate(90deg)}
 .pname{font-weight:600}
+.person.prio{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.star{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
 .pmeta{font-size:13px;color:var(--muted)}
 .person .log{margin-bottom:6px}
 .log{display:flex;flex-direction:column;border-left:2px solid var(--line);margin-left:6px}
@@ -168,12 +170,13 @@ function openDetail(id){
     people.forEach(p=>{if(!groups.has(p))groups.set(p,[]);groups.get(p).push({...a,shared:people.length>1});});
   });
   const latest=g=>g.reduce((m,a)=>Math.max(m,a.i),-1);
-  const ordered=[...groups.entries()].sort((x,y)=>latest(y[1])-latest(x[1]));
+  const prio=r.priority||"";
+  const ordered=[...groups.entries()].sort((x,y)=>((y[0]===prio)-(x[0]===prio))||latest(y[1])-latest(x[1]));
   $("log").innerHTML=ordered.length?ordered.map(([name,list])=>{
     list.sort((a,b)=>(b.date||"").localeCompare(a.date||"")||b.i-a.i);
     const key=r.id+"|"+name, closed=isClosed(key);
-    return `<details class="person" data-key="${esc(key)}"${closed?"":" open"}>
-      <summary><span class="pname">${esc(name)}</span><span class="pmeta">${list.length} ${list.length===1?"entry":"entries"} · last ${fmtDate(list[0].date)}</span></summary>
+    return `<details class="person${name===prio?" prio":""}" data-key="${esc(key)}"${closed?"":" open"}>
+      <summary><span class="pname">${esc(name)}</span>${name===prio?`<span class="star">★ Priority</span>`:""}<span class="pmeta">${list.length} ${list.length===1?"entry":"entries"} · last ${fmtDate(list[0].date)}</span></summary>
       <div class="log">${list.map(a=>`<div class="entry${/reply/i.test(a.channel||"")?" in":""}">
         <div class="meta"><b>${fmtDate(a.date)}</b><span>${esc(a.channel)}</span>${a.shared?`<span class="to">to ${esc(a.to)}</span>`:""}</div>
         ${a.body?`<p class="body">${esc(a.body)}</p>`:""}

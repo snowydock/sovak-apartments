@@ -80,7 +80,8 @@
           "to": "Johnny's assistant (917) 421-9905",
           "body": "I don't think I understand. Are you able to help me with the streeteasy listing I texted Johnny about?"
         }
-      ]
+      ],
+      "priority": "Johnny Lee"
     },
     {
       "id": "riverside-280",
@@ -132,7 +133,8 @@
           "date": "2026-10-23",
           "to": "Sadie Taylor"
         }
-      ]
+      ],
+      "priority": "Sadie Taylor"
     },
     {
       "id": "wea-752-2h",
