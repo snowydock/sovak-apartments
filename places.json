@@ -5,10 +5,10 @@
       "address": "222 Riverside Drive",
       "amenities": "24-hr doorman, Concierge, Elevator, Gym, Roof deck, Playroom, In-unit W/D, Live-in super",
       "building": "Condo at 94th St",
-      "contact": "Johnny Lee (917) 886-5140 · Michael Lorber (917) 664-0029 · Alexander Boriskin",
+      "contact": "Johnny Lee (917) 886-5140 · Michael Lorber (917) 664-0029 · Alexander Boriskin · Johnny's assistant (917) 421-9905",
       "link": "https://streeteasy.com/building/222-riverside-drive-new_york/16f",
       "mgmt": "Douglas Elliman",
-      "notes": "Junior 1BR (2 rooms), 16th floor, Hudson River views, furnished or unfurnished. Condo, so expect a board application and move-in fees. Listed 10/19, available now. 0.18 mi to 96th St express.",
+      "notes": "Junior 1BR (2 rooms), 16th floor, Hudson River views, furnished or unfurnished. Condo, so expect a board application and move-in fees. Listed 10/19, available now. 0.18 mi to 96th St express.\nJohnny's assistant line (917) 421-9905 looks automated: thought we were in Brooklyn, says they don't do rentals.",
       "phone": "(917) 886-5140",
       "rent": 4700,
       "sqft": 555,
@@ -31,6 +31,54 @@
           "channel": "Text",
           "date": "2026-10-23",
           "to": "Michael Lorber"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Their reply",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "Hello Mike! This is Johnny's assistant with Douglas Elliman. We can end anytime, but I know you were browsing some properties online in the Brooklyn area. Are you looking for yourself or for someone else?"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Text",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "Hi Douglas, we're mostly interested in the UWS. It is for me and my wife"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Their reply",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "Thanks for clarifying, Mike! The Upper West Side is a great area. Are you considering making a move anytime soon?"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Text",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "Sorry, your name isn't Douglas, it's your company name. We're targeting a move in date of 12/15."
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Their reply",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "You're absolutely right, my apologies for the confusion! Thanks for sharing that timeline. December 15th gives us a good window to work with. What price range are you considering?"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Text",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "4-5k"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Their reply",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "While we don't deal with rentals, I'm here to help! When you are ready to start looking for that perfect home, I'll be ready!"
+        },
+        {
+          "date": "2026-10-23",
+          "channel": "Text",
+          "to": "Johnny's assistant (917) 421-9905",
+          "body": "I don't think I understand. Are you able to help me with the streeteasy listing I texted Johnny about?"
         }
       ]
     },
