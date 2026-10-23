@@ -63,6 +63,15 @@ a{color:var(--accent)}
 .phones{display:flex;flex-wrap:wrap;gap:6px}
 .phone{font-family:var(--f-mono);font-size:13px;border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:3px 10px;cursor:pointer}
 .phone:hover{border-color:var(--accent)}
+#log{display:flex;flex-direction:column;gap:10px}
+.person{border:1px solid var(--line);border-radius:10px;padding:0 14px}
+.person summary{cursor:pointer;padding:12px 0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;list-style:none}
+.person summary::-webkit-details-marker{display:none}
+.person summary::before{content:"▸";color:var(--muted);transition:transform .15s}
+.person[open] summary::before{transform:rotate(90deg)}
+.pname{font-weight:600}
+.pmeta{font-size:13px;color:var(--muted)}
+.person .log{margin-bottom:6px}
 .log{display:flex;flex-direction:column;border-left:2px solid var(--line);margin-left:6px}
 .entry{position:relative;padding:0 0 18px 18px;display:flex;flex-direction:column;gap:6px}
 .entry::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
@@ -90,7 +99,7 @@ a{color:var(--accent)}
     <dl id="dInfo"></dl>
     <p class="notes" id="dNotes" hidden></p>
     <h3>Activity</h3>
-    <div class="log" id="log"></div>
+    <div id="log"></div>
   </div>
 </div>
 
@@ -100,6 +109,8 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money=n=>"$"+Number(n).toLocaleString("en-US");
 const fmtDate=d=>d?new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}):"";
+const isClosed=k=>{try{return JSON.parse(localStorage.getItem("closed")||"[]").includes(k)}catch(_){return false}};
+const setClosed=(k,v)=>{try{let s=JSON.parse(localStorage.getItem("closed")||"[]").filter(x=>x!==k);if(v)s.push(k);localStorage.setItem("closed",JSON.stringify(s))}catch(_){}};
 const lastOf=r=>{const a=r.activity||[];return a.reduce((m,x,i)=>(!m||(x.date||"")>=(m.date||""))?x:m,null);};
 
 function rentHtml(r){
@@ -150,11 +161,26 @@ function openDetail(id){
   $("dInfo").innerHTML=info.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
   $("dNotes").hidden=!r.notes; $("dNotes").textContent=r.notes||"";
   $("dLink").hidden=!r.link; if(r.link)$("dLink").href=r.link;
-  const acts=(r.activity||[]).map((a,i)=>({...a,i})).sort((a,b)=>(b.date||"").localeCompare(a.date||"")||b.i-a.i);
-  $("log").innerHTML=acts.length?acts.map(a=>`<div class="entry${/reply/i.test(a.channel||"")?" in":""}">
-      <div class="meta"><b>${fmtDate(a.date)}</b><span>${esc(a.channel)}</span>${a.to?`<span class="to">${/reply/i.test(a.channel||"")?"from":"with"} ${esc(a.to)}</span>`:""}</div>
-      ${a.body?`<p class="body">${esc(a.body)}</p>`:""}
-    </div>`).join(""):`<p class="status" style="padding-left:18px">Nothing yet.</p>`;
+  const acts=(r.activity||[]).map((a,i)=>({...a,i}));
+  const groups=new Map();
+  acts.forEach(a=>{
+    const people=(a.to||"Other").split(/\s*&\s*/).filter(Boolean);
+    people.forEach(p=>{if(!groups.has(p))groups.set(p,[]);groups.get(p).push({...a,shared:people.length>1});});
+  });
+  const latest=g=>g.reduce((m,a)=>Math.max(m,a.i),-1);
+  const ordered=[...groups.entries()].sort((x,y)=>latest(y[1])-latest(x[1]));
+  $("log").innerHTML=ordered.length?ordered.map(([name,list])=>{
+    list.sort((a,b)=>(b.date||"").localeCompare(a.date||"")||b.i-a.i);
+    const key=r.id+"|"+name, closed=isClosed(key);
+    return `<details class="person" data-key="${esc(key)}"${closed?"":" open"}>
+      <summary><span class="pname">${esc(name)}</span><span class="pmeta">${list.length} ${list.length===1?"entry":"entries"} · last ${fmtDate(list[0].date)}</span></summary>
+      <div class="log">${list.map(a=>`<div class="entry${/reply/i.test(a.channel||"")?" in":""}">
+        <div class="meta"><b>${fmtDate(a.date)}</b><span>${esc(a.channel)}</span>${a.shared?`<span class="to">to ${esc(a.to)}</span>`:""}</div>
+        ${a.body?`<p class="body">${esc(a.body)}</p>`:""}
+      </div>`).join("")}</div>
+    </details>`;
+  }).join(""):`<p class="status">Nothing yet.</p>`;
+  $("log").querySelectorAll("details").forEach(d=>d.addEventListener("toggle",()=>setClosed(d.dataset.key,!d.open)));
   $("detail").hidden=false; document.body.style.overflow="hidden"; $("dClose").focus();
 }
 function closeDetail(){ $("detail").hidden=true; openId=null; document.body.style.overflow=""; }
