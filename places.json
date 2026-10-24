@@ -39,7 +39,7 @@
       "contact": "Paul Morrissette (781) 812-3140 · Luke Joyce (609) 906-8403 · REAL New York office (212) 279-1289",
       "phone": "(781) 812-3140",
       "link": "https://streeteasy.com/building/265-riverside-drive-new_york/6d",
-      "notes": "Between 98th and 99th on Riverside Park, 1/2/3 at 96th. Prewar co-op, 64 units, 11 floors. Described as extra large 1BR (no sq ft listed): king bedroom, dining alcove, separate kitchen, big closets, new renovations. Co-op sublet, so board approval needed. Rented 10/2025 at the same $4,750, so current tenant is leaving after one year. Listed 10/16, available now, 22 saves. Listing says email for showings, but no email shown.\nPaul (10/24): needs a 12/1 move-in at the latest.",
+      "notes": "Between 98th and 99th on Riverside Park, 1/2/3 at 96th. Prewar co-op, 64 units, 11 floors. Described as extra large 1BR (no sq ft listed): king bedroom, dining alcove, separate kitchen, big closets, new renovations. Co-op sublet, so board approval needed. Rented 10/2025 at the same $4,750, so current tenant is leaving after one year. Listed 10/16, available now, 22 saves. Listing says email for showings, but no email shown.\nPaul (10/24): needs a 12/1 move-in at the latest.\nPaul (10/24): no concession. 12/1 start at full $4,750.",
       "priority": "Paul Morrissette",
       "activity": [
         {
@@ -71,6 +71,12 @@
           "channel": "Text",
           "to": "Paul Morrissette",
           "body": "Thanks Paul, the place looks great. 12/1 could work for us, but we're committed through 12/15 at our current place. Would the owner consider starting rent on 12/15, or meeting us at $4,550/mo for the year to cover the overlap? We can see it this week and apply right away."
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Their reply",
+          "to": "Paul Morrissette",
+          "body": "Flat no on the concession (12/15 rent start or $4,550)."
         }
       ]
     },
