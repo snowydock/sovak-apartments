@@ -83,6 +83,10 @@ a{color:var(--accent)}
 .entry .meta .to{color:var(--muted)}
 .entry .body{white-space:pre-wrap;font-size:14px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0;overflow-wrap:anywhere}
 
+
+.card.hot{border:2px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,#f4f6f8,#9aa3ad 30%,#e6e9ec 50%,#7f8892 70%,#dfe3e7) border-box;box-shadow:0 0 0 3px rgba(160,170,180,.18),0 6px 18px rgba(120,130,140,.18)}
+.pill.hot{background:linear-gradient(135deg,#eef1f4,#b9c0c7);color:#2f363d;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:11px;padding:3px 9px}
+@media (prefers-color-scheme: dark){.card.hot{box-shadow:0 0 0 3px rgba(200,210,220,.12),0 6px 18px rgba(0,0,0,.4)}}
 /* ===================== THE GRAVEYARD ===================== */
 .yard-wrap{display:flex;flex-direction:column;gap:12px;margin-top:8px}
 .yard-toggle{align-self:center;display:inline-flex;align-items:center;gap:8px;background:none;border:1px dashed var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s,color .2s}
@@ -238,18 +242,18 @@ const title=r=>`${esc(r.address)}${r.unit?" "+esc(r.unit):""}`;
 function render(){
   const q=$("q").value.trim().toLowerCase();
   const list=rows.filter(r=>!q||[r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities].join(" ").toLowerCase().includes(q))
-    .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
+    .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||(!!b.traction-!!a.traction)||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
   const dead=list.filter(r=>r.unavailable);
   renderYard(dead);
   $("grid").innerHTML=list.filter(r=>!r.unavailable).map(r=>{
     const amen=(r.amenities||"").split(",").map(x=>x.trim()).filter(Boolean);
     const la=lastOf(r), n=(r.activity||[]).length;
-    return `<article class="card" data-open="${esc(r.id)}" tabindex="0">
+    return `<article class="card${r.traction?" hot":""}" data-open="${esc(r.id)}" tabindex="0">
       <div class="top">
         <h3 class="addr"><span class="${r.unavailable?"struck":""}">${title(r)}</span><small>${esc(r.building||r.mgmt||"")}</small></h3>
         <div class="rent">${rentHtml(r)}</div>
       </div>
-      ${r.unavailable?`<div class="pills"><span class="pill gone">No longer available</span></div>`:""}
+      ${r.traction?`<div class="pills"><span class="pill hot">In motion</span></div>`:""}
       ${amen.length?`<div class="pills">${amen.map(a=>`<span class="pill">${esc(a)}</span>`).join("")}</div>`:""}
       <div class="last"><span>${la?`Last: <b>${esc(la.channel)}</b> · ${fmtDate(la.date)}${n>1?` · ${n} entries`:""}`:"No activity yet"}</span>${r.link?`<a class="se" href="${esc(r.link)}" target="_blank" rel="noopener">View on StreetEasy ↗</a>`:""}</div>
     </article>`;
