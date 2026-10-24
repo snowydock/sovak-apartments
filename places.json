@@ -1,6 +1,40 @@
 {
   "places": [
     {
+      "id": "riverside-265-6d",
+      "address": "265 Riverside Drive",
+      "unit": "#6D",
+      "building": "Co-op at 98th St",
+      "rent": 4750,
+      "amenities": "Part-time doorman, Elevator, Laundry in bldg, Live-in super, Bike room, Storage, Pets allowed",
+      "mgmt": "REAL New York",
+      "contact": "Paul Morrissette (781) 812-3140 · Luke Joyce (609) 906-8403 · REAL New York office (212) 279-1289",
+      "phone": "(781) 812-3140",
+      "link": "https://streeteasy.com/building/265-riverside-drive-new_york/6d",
+      "notes": "Between 98th and 99th on Riverside Park, 1/2/3 at 96th. Prewar co-op, 64 units, 11 floors. Described as extra large 1BR (no sq ft listed): king bedroom, dining alcove, separate kitchen, big closets, new renovations. Co-op sublet, so board approval needed. Rented 10/2025 at the same $4,750, so current tenant is leaving after one year. Listed 10/16, available now, 22 saves. Listing says email for showings, but no email shown.",
+      "priority": "Paul Morrissette",
+      "activity": [
+        {
+          "date": "2026-10-24",
+          "channel": "StreetEasy message",
+          "to": "Paul Morrissette & Luke Joyce",
+          "body": "Hi Paul and Luke,\n\nMy wife and I are interested in #6D at 265 Riverside. We're looking for a 1BR on Riverside or West End for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to tour in the next week or two and can apply right away.\n\nA few questions:\n1. Would the owner consider a December 15 start?\n2. What does the co-op board approval process look like, and how long does it usually take?\n3. Are there any move-in or board fees on top of the rent?\n\nIf the timing doesn't work on this one, we'd love to hear about anything similar you have opening up for December.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Text",
+          "to": "Paul Morrissette",
+          "body": "Hi Paul, this is Mike Sovak. I just sent a message on StreetEasy about 265 Riverside #6D. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we set up a showing? If the timing doesn't work, we'd love to hear about anything similar for December. Thanks!"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Text",
+          "to": "Luke Joyce",
+          "body": "Hi Luke, this is Mike Sovak. I just sent a message on StreetEasy about 265 Riverside #6D. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we set up a showing? If the timing doesn't work, we'd love to hear about anything similar for December. Thanks!"
+        }
+      ]
+    },
+    {
       "id": "w75-166-6c",
       "address": "166 West 75th Street",
       "unit": "#6C",
