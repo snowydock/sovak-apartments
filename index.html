@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>UWS Apartment Hunt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Creepster&family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap">
 <style>
 :root{
   --bg:#f3f5f3; --surface:#ffffff; --ink:#1b2420; --muted:#5d6b64; --line:#d9e0dc;
@@ -82,6 +82,96 @@ a{color:var(--accent)}
 .entry .meta b{font-family:var(--f-mono);font-weight:500}
 .entry .meta .to{color:var(--muted)}
 .entry .body{white-space:pre-wrap;font-size:14px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0;overflow-wrap:anywhere}
+
+/* ===================== THE GRAVEYARD ===================== */
+.yard-wrap{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.yard-toggle{align-self:center;display:inline-flex;align-items:center;gap:8px;background:none;border:1px dashed var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s,color .2s}
+.yard-toggle:hover,.yard-toggle[aria-expanded="true"]{opacity:1;border-color:#ff7a1a;color:#ff7a1a}
+.yard-toggle .tomb-ico{font-size:16px;filter:grayscale(.3)}
+.yard{position:relative;overflow:hidden;border-radius:18px;isolation:isolate;min-height:520px;padding:0 16px 40px;color:#e9e4f5;
+  background:
+    radial-gradient(1px 1px at 12% 18%,#fff 60%,transparent),radial-gradient(1px 1px at 27% 8%,#fff 60%,transparent),
+    radial-gradient(1.5px 1.5px at 44% 22%,#fff 60%,transparent),radial-gradient(1px 1px at 63% 12%,#fff 60%,transparent),
+    radial-gradient(1px 1px at 78% 26%,#fff 60%,transparent),radial-gradient(1.5px 1.5px at 91% 9%,#fff 60%,transparent),
+    radial-gradient(1px 1px at 6% 34%,#fff 60%,transparent),radial-gradient(1px 1px at 55% 4%,#fff 60%,transparent),
+    radial-gradient(1px 1px at 35% 30%,#fff 60%,transparent),radial-gradient(1px 1px at 70% 35%,#fff 60%,transparent),
+    linear-gradient(180deg,#0b0418 0%,#1d0b3a 38%,#3a1450 62%,#5a1f3a 78%,#7a2e12 100%);
+  box-shadow:inset 0 0 120px rgba(0,0,0,.8),0 10px 40px rgba(90,20,80,.35)}
+.yard[hidden]{display:none}
+.yard>*{position:relative;z-index:2}
+.yard .moon{position:absolute;z-index:0;top:28px;right:9%;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#fffbe6 0%,#ffe9a8 45%,#f2c766 70%,#d9a441 100%);
+  box-shadow:0 0 60px 20px rgba(255,214,120,.35),0 0 160px 60px rgba(255,140,60,.18)}
+.yard .moon::before,.yard .moon::after{content:"";position:absolute;border-radius:50%;background:rgba(180,130,50,.35)}
+.yard .moon::before{width:22px;height:22px;top:30px;left:58px}
+.yard .moon::after{width:14px;height:14px;top:70px;left:34px;box-shadow:40px 8px 0 -3px rgba(180,130,50,.3)}
+.yard .tree{position:absolute;z-index:0;bottom:90px;left:-10px;width:230px;height:300px;opacity:.95}
+.yard .tree.r{left:auto;right:-20px;transform:scaleX(-1);width:180px;height:240px;opacity:.8}
+.yard .bat{position:absolute;z-index:1;font-size:26px;animation:fly 14s linear infinite;filter:drop-shadow(0 0 4px rgba(0,0,0,.6))}
+.yard .bat:nth-of-type(2){top:60px;animation-duration:18s;animation-delay:-6s;font-size:18px}
+.yard .bat:nth-of-type(3){top:120px;animation-duration:11s;animation-delay:-3s;font-size:22px}
+.yard .bat:nth-of-type(4){top:30px;animation-duration:22s;animation-delay:-12s;font-size:14px}
+@keyframes fly{0%{transform:translate(-80px,40px) rotate(-8deg)}25%{transform:translate(25vw,0) rotate(6deg)}50%{transform:translate(50vw,50px) rotate(-6deg)}75%{transform:translate(75vw,10px) rotate(8deg)}100%{transform:translate(110vw,40px) rotate(-8deg)}}
+.yard h2.yard-title{font-family:"Creepster",cursive;font-weight:400;font-size:clamp(40px,8vw,72px);letter-spacing:.06em;text-align:center;margin:56px 0 0;color:#ff7a1a;
+  text-shadow:0 0 8px #ff4d00,0 0 24px #ff2a00,0 4px 0 #3b0a00,0 0 60px rgba(255,90,0,.6);animation:flick 4s infinite}
+@keyframes flick{0%,19%,22%,62%,64%,100%{opacity:1}20%,63%{opacity:.55}}
+.yard .yard-sub{font-family:"IM Fell English",serif;font-style:italic;text-align:center;margin:4px 0 0;color:#cdbbe8;font-size:17px;text-shadow:0 2px 6px #000}
+.yard .drip{display:block;height:18px;margin:6px auto 0;width:min(520px,90%);
+  background:radial-gradient(circle at 10% 0,#8a0a0a 6px,transparent 7px),radial-gradient(circle at 23% 0,#8a0a0a 4px,transparent 5px),radial-gradient(circle at 41% 0,#8a0a0a 7px,transparent 8px),radial-gradient(circle at 58% 0,#8a0a0a 3px,transparent 4px),radial-gradient(circle at 74% 0,#8a0a0a 6px,transparent 7px),radial-gradient(circle at 90% 0,#8a0a0a 4px,transparent 5px),linear-gradient(#8a0a0a,#8a0a0a) top/100% 4px no-repeat;filter:drop-shadow(0 2px 2px #000)}
+.yard .fence{position:absolute;z-index:1;left:0;right:0;bottom:70px;height:70px;opacity:.9;
+  background:repeating-linear-gradient(90deg,transparent 0 16px,#0a0610 16px 22px),linear-gradient(#0a0610,#0a0610) 0 14px/100% 5px no-repeat,linear-gradient(#0a0610,#0a0610) 0 48px/100% 5px no-repeat;
+  -webkit-mask:linear-gradient(#000,#000);}
+.yard .fence::before{content:"";position:absolute;top:-10px;left:0;right:0;height:14px;background:repeating-linear-gradient(90deg,transparent 0 14px,#0a0610 14px 24px);clip-path:polygon(0 100%,0 100%,100% 100%,100% 100%);}
+.yard .ground{position:absolute;z-index:1;left:-5%;right:-5%;bottom:-30px;height:140px;border-radius:50% 50% 0 0/40px 40px 0 0;background:linear-gradient(#1a0f12,#07040a);box-shadow:0 -6px 20px rgba(0,0,0,.6)}
+.yard .fog{position:absolute;z-index:3;left:-50%;width:200%;height:120px;bottom:10px;pointer-events:none;opacity:.55;
+  background:radial-gradient(ellipse at 20% 60%,rgba(220,210,255,.45),transparent 60%),radial-gradient(ellipse at 55% 50%,rgba(220,210,255,.35),transparent 55%),radial-gradient(ellipse at 85% 65%,rgba(220,210,255,.4),transparent 60%);
+  animation:fog 28s linear infinite;filter:blur(8px)}
+.yard .fog.b{bottom:60px;opacity:.3;animation-duration:44s;animation-direction:reverse}
+@keyframes fog{from{transform:translateX(0)}to{transform:translateX(25%)}}
+.yard .ghost{position:absolute;z-index:1;top:150px;left:12%;font-size:46px;opacity:.55;animation:boo 7s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(200,220,255,.8))}
+@keyframes boo{0%,100%{transform:translateY(0) rotate(-4deg);opacity:.25}50%{transform:translateY(-26px) rotate(4deg);opacity:.75}}
+.yard .spider{position:absolute;z-index:2;top:0;left:22%;width:2px;height:90px;background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.15));animation:dangle 6s ease-in-out infinite;transform-origin:top}
+.yard .spider::after{content:"🕷️";position:absolute;bottom:-18px;left:-11px;font-size:22px}
+@keyframes dangle{0%,100%{height:70px}50%{height:120px}}
+.yard .web{position:absolute;z-index:1;top:0;left:0;width:150px;height:150px;opacity:.35;
+  background:repeating-radial-gradient(circle at 0 0,transparent 0 18px,rgba(255,255,255,.7) 18px 19px),conic-gradient(from 90deg at 0 0,transparent 0 8deg,rgba(255,255,255,.7) 8deg 9deg,transparent 9deg 22deg,rgba(255,255,255,.7) 22deg 23deg,transparent 23deg 40deg,rgba(255,255,255,.7) 40deg 41deg,transparent 41deg 58deg,rgba(255,255,255,.7) 58deg 59deg,transparent 59deg 76deg,rgba(255,255,255,.7) 76deg 77deg,transparent 77deg);
+  -webkit-mask:radial-gradient(circle at 0 0,#000 60%,transparent 72%);mask:radial-gradient(circle at 0 0,#000 60%,transparent 72%)}
+.yard .web.r{left:auto;right:0;transform:scaleX(-1)}
+.stones{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:34px 26px;margin-top:40px;padding-bottom:70px;z-index:4}
+.stone{position:relative;width:250px;min-height:300px;padding:44px 22px 26px;cursor:pointer;text-align:center;color:#2a2630;
+  border-radius:125px 125px 10px 10px/110px 110px 10px 10px;
+  background:
+    radial-gradient(circle at 20% 80%,rgba(60,90,40,.55) 0 10px,transparent 22px),
+    radial-gradient(circle at 80% 92%,rgba(60,90,40,.6) 0 14px,transparent 28px),
+    radial-gradient(circle at 70% 30%,rgba(0,0,0,.08) 0 2px,transparent 3px),
+    radial-gradient(circle at 30% 50%,rgba(0,0,0,.07) 0 2px,transparent 3px),
+    linear-gradient(160deg,#c9c4cf 0%,#a29cab 45%,#7d7787 100%);
+  box-shadow:inset -10px -14px 24px rgba(0,0,0,.35),inset 8px 8px 18px rgba(255,255,255,.35),0 18px 0 -6px #0e0912,0 24px 30px rgba(0,0,0,.7);
+  transform:rotate(var(--tilt,-2deg));transition:transform .25s}
+.stone:nth-child(2n){--tilt:2.5deg}.stone:nth-child(3n){--tilt:-4deg}
+.stone:hover,.stone:focus-visible{transform:rotate(0) translateY(-6px);outline:none;box-shadow:inset -10px -14px 24px rgba(0,0,0,.35),inset 8px 8px 18px rgba(255,255,255,.35),0 18px 0 -6px #0e0912,0 0 40px rgba(255,122,26,.55)}
+.stone::before{content:"";position:absolute;left:50%;top:-6px;width:60px;height:24px;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 100%,rgba(70,100,45,.8),transparent 70%);border-radius:50%}
+.stone .crack{position:absolute;top:30px;right:40px;width:40px;height:70px;background:linear-gradient(115deg,transparent 46%,rgba(30,25,35,.6) 47% 49%,transparent 50%),linear-gradient(60deg,transparent 46%,rgba(30,25,35,.5) 47% 49%,transparent 50%) 0 30px/100% 40px no-repeat;opacity:.8}
+.engr{text-shadow:1px 1px 0 rgba(255,255,255,.45),-1px -1px 0 rgba(0,0,0,.35)}
+.stone .cross{font-family:"Cinzel",serif;font-size:26px;line-height:1;color:#4a4552}
+.stone .rip{font-family:"Cinzel",serif;font-weight:700;font-size:34px;letter-spacing:.18em;margin:6px 0 4px;color:#3a3542}
+.stone .who{font-family:"Cinzel",serif;font-weight:700;font-size:16px;line-height:1.25;margin:0;color:#2a2630;overflow-wrap:anywhere}
+.stone .who small{display:block;font-weight:500;font-size:12px;letter-spacing:.08em;color:#4a4552;margin-top:2px}
+.stone .dates{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.12em;margin:10px 0 6px;color:#3a3542}
+.stone .epi{font-family:"IM Fell English",serif;font-style:italic;font-size:15px;line-height:1.35;margin:8px 0 0;color:#302b36}
+.stone .price{font-family:var(--f-mono);font-size:11px;margin-top:10px;color:#4a4552;opacity:.85}
+.stone .flowers{position:absolute;bottom:-6px;left:10px;font-size:22px;filter:saturate(.6) drop-shadow(0 2px 2px #000)}
+.stone .candle{position:absolute;bottom:-4px;right:14px;font-size:22px;animation:candle 1.6s ease-in-out infinite alternate;filter:drop-shadow(0 0 8px rgba(255,170,60,.9))}
+@keyframes candle{from{filter:drop-shadow(0 0 4px rgba(255,170,60,.6))}to{filter:drop-shadow(0 0 14px rgba(255,170,60,1))}}
+.yard .pumpkins{position:absolute;z-index:5;bottom:14px;left:0;right:0;display:flex;justify-content:space-between;padding:0 18px;font-size:34px;pointer-events:none}
+.yard .pumpkins span{filter:drop-shadow(0 0 12px rgba(255,120,0,.85));animation:glow 2.4s ease-in-out infinite alternate}
+.yard .pumpkins span:nth-child(2n){animation-delay:-1.2s;font-size:26px;align-self:flex-end}
+@keyframes glow{from{filter:drop-shadow(0 0 6px rgba(255,120,0,.5))}to{filter:drop-shadow(0 0 18px rgba(255,140,0,1))}}
+.yard .rip-count{font-family:"IM Fell English",serif;text-align:center;color:#ffb070;font-size:14px;margin:14px 0 0;letter-spacing:.06em}
+.yard-close{display:block;margin:0 auto;font-family:"Creepster",cursive;font-size:20px;letter-spacing:.08em;background:#1a0b22;color:#ff7a1a;border:1px solid #ff7a1a;border-radius:999px;padding:6px 18px;cursor:pointer;position:relative;z-index:6}
+.yard-close:hover{background:#ff7a1a;color:#1a0b22}
+@media (max-width:520px){.yard .moon{width:64px;height:64px;right:5%;top:14px}.yard .moon::before,.yard .moon::after{display:none}.yard h2.yard-title{margin-top:92px}.yard .ghost{top:auto;bottom:220px;left:4%;font-size:36px}.yard .tree{width:150px;height:200px}.stone{width:min(260px,86vw)}}
+@media (prefers-reduced-motion:reduce){.yard *{animation:none!important}}
 </style>
 </head>
 <body>
@@ -90,6 +180,28 @@ a{color:var(--accent)}
   <input type="search" id="q" placeholder="Search address, landlord, contact, notes" aria-label="Search">
   <p class="status" id="status" role="status">Loading…</p>
   <section class="grid" id="grid"></section>
+  <div class="yard-wrap" id="yardWrap" hidden>
+    <button class="yard-toggle" id="yardBtn" type="button" aria-expanded="false" aria-controls="yard"><span class="tomb-ico">🪦</span><span id="yardLabel">Graveyard</span></button>
+    <section class="yard" id="yard" hidden aria-label="Graveyard of apartments no longer available">
+      <div class="moon"></div>
+      <svg class="tree" viewBox="0 0 230 300" aria-hidden="true"><path fill="#07030c" d="M110 300 C112 240 104 200 96 170 C80 150 50 140 20 150 C48 136 72 136 90 146 C86 120 70 96 40 80 C70 88 90 104 98 126 C102 96 96 64 80 30 C100 58 110 92 108 130 C118 104 140 84 176 74 C150 92 128 114 118 146 C138 130 170 126 210 136 C176 140 146 150 124 172 C118 210 122 250 128 300 Z"/><path stroke="#07030c" stroke-width="4" fill="none" d="M40 80 L20 60 M80 30 L72 6 M176 74 L204 58 M210 136 L228 128 M20 150 L2 160"/></svg>
+      <svg class="tree r" viewBox="0 0 230 300" aria-hidden="true"><path fill="#07030c" d="M110 300 C112 240 104 200 96 170 C80 150 50 140 20 150 C48 136 72 136 90 146 C86 120 70 96 40 80 C70 88 90 104 98 126 C102 96 96 64 80 30 C100 58 110 92 108 130 C118 104 140 84 176 74 C150 92 128 114 118 146 C138 130 170 126 210 136 C176 140 146 150 124 172 C118 210 122 250 128 300 Z"/></svg>
+      <div class="web"></div><div class="web r"></div>
+      <span class="bat" aria-hidden="true">🦇</span><span class="bat" aria-hidden="true">🦇</span><span class="bat" aria-hidden="true">🦇</span><span class="bat" aria-hidden="true">🦇</span>
+      <div class="spider" aria-hidden="true"></div>
+      <div class="ghost" aria-hidden="true">👻</div>
+      <h2 class="yard-title">The Graveyard</h2>
+      <span class="drip" aria-hidden="true"></span>
+      <p class="yard-sub">Here rest the apartments that slipped through our fingers.</p>
+      <p class="rip-count" id="ripCount"></p>
+      <div class="stones" id="stones"></div>
+      <button class="yard-close" id="yardClose" type="button">Rest in peace (close)</button>
+      <div class="fence" aria-hidden="true"></div>
+      <div class="ground" aria-hidden="true"></div>
+      <div class="fog" aria-hidden="true"></div><div class="fog b" aria-hidden="true"></div>
+      <div class="pumpkins" aria-hidden="true"><span>🎃</span><span>🕯️</span><span>🎃</span><span>💀</span><span>🎃</span></div>
+    </section>
+  </div>
 </div>
 
 <div class="overlay" id="detail" hidden>
@@ -127,7 +239,9 @@ function render(){
   const q=$("q").value.trim().toLowerCase();
   const list=rows.filter(r=>!q||[r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities].join(" ").toLowerCase().includes(q))
     .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
-  $("grid").innerHTML=list.map(r=>{
+  const dead=list.filter(r=>r.unavailable);
+  renderYard(dead);
+  $("grid").innerHTML=list.filter(r=>!r.unavailable).map(r=>{
     const amen=(r.amenities||"").split(",").map(x=>x.trim()).filter(Boolean);
     const la=lastOf(r), n=(r.activity||[]).length;
     return `<article class="card" data-open="${esc(r.id)}" tabindex="0">
@@ -141,6 +255,38 @@ function render(){
     </article>`;
   }).join("");
 }
+
+
+const EPITAPHS=["Gone before we could tour.","Snatched in the night by a faster applicant.","Too beautiful for this world.","We hardly knew ye.","Leased, but never forgotten.","Here lies a 12/15 dream.","It was never meant to be."];
+function renderYard(dead){
+  $("yardWrap").hidden=!dead.length;
+  $("yardLabel").textContent=`Graveyard · ${dead.length}`;
+  $("ripCount").textContent=`${dead.length} ${dead.length===1?"soul":"souls"} departed`;
+  $("stones").innerHTML=dead.map((r,i)=>{
+    const born=(r.activity&&r.activity[0]&&r.activity[0].date)||"";
+    const died=r.goneDate||((lastOf(r)||{}).date)||"";
+    const yr=d=>d?new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}).toUpperCase():"?";
+    const epi=r.epitaph||EPITAPHS[i%EPITAPHS.length];
+    return `<article class="stone" data-open="${esc(r.id)}" tabindex="0" aria-label="${esc(r.address)} ${esc(r.unit||"")}, no longer available">
+      <div class="crack" aria-hidden="true"></div>
+      <div class="cross engr" aria-hidden="true">✝</div>
+      <div class="rip engr">R.I.P.</div>
+      <h3 class="who engr">${title(r)}<small>${esc(r.building||r.mgmt||"")}</small></h3>
+      <div class="dates engr">${yr(born)} – ${yr(died)}</div>
+      <p class="epi engr">"${esc(epi)}"</p>
+      ${r.rent?`<div class="price">${money(r.rent)}/mo, once</div>`:""}
+      <span class="flowers" aria-hidden="true">🥀</span><span class="candle" aria-hidden="true">🕯️</span>
+    </article>`;
+  }).join("");
+}
+function setYard(open){
+  $("yard").hidden=!open; $("yardBtn").setAttribute("aria-expanded",open);
+  if(open)$("yard").scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("yardBtn").onclick=()=>setYard($("yard").hidden);
+$("yardClose").onclick=()=>{setYard(false);$("yardBtn").focus();};
+$("stones").addEventListener("click",e=>{const c=e.target.closest("[data-open]");if(c)openDetail(c.dataset.open);});
+$("stones").addEventListener("keydown",e=>{if(e.key!=="Enter")return;const c=e.target.closest("[data-open]");if(c)openDetail(c.dataset.open);});
 
 function phonesHtml(r){
   const nums=[...new Set(((r.contact||"")+" "+(r.phone||"")).match(/\(\d{3}\)\s?\d{3}-\d{4}/g)||[])];
