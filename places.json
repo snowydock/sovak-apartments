@@ -1,6 +1,28 @@
 {
   "places": [
     {
+      "id": "w72-269-12b",
+      "address": "269 West 72nd Street",
+      "unit": "#12B",
+      "building": "Co-op near West End",
+      "rent": 4595,
+      "amenities": "Virtual doorman, Elevator, Laundry in bldg, Live-in super, Bike room, Dishwasher, South-facing",
+      "mgmt": "Douglas Elliman",
+      "contact": "Doreen Courtright (212) 319-5499",
+      "phone": "(212) 319-5499",
+      "link": "https://streeteasy.com/building/269-west-72-street-new_york/12b",
+      "notes": "72nd between Broadway and West End, 1/2/3 at 72nd. 1924 co-op, 58 units, 12th floor. Sunny south-facing living room and bedroom (fits a king), en-suite bath with tub, windowed kitchen, big closets. Virtual doorman only. PETS: description says no pets, policies say cats and dogs allowed; confirm before anything else. Co-op board approval. Building fees roughly $1,700 non-refundable plus $500 refundable move-in deposit. Listed 10/21, available now, 29 saves. Open house Sat 10/24 12:30 to 2:30, by appointment.",
+      "priority": "Doreen Courtright",
+      "activity": [
+        {
+          "date": "2026-10-24",
+          "channel": "StreetEasy message",
+          "to": "Doreen Courtright",
+          "body": "Hi Doreen,\n\nMy wife and I are interested in #12B at 269 West 72nd. We're looking for a 1BR on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to see it this week and can apply right away.\n\nA few questions:\n1. We have a well-behaved dog. The description says no pets, but the listing policies say dogs are allowed. Which is it?\n2. Would the owner consider a December 15 start?\n3. How long does board approval usually take here?\n\nIf the timing doesn't work on this one, we'd love to hear about anything similar you have opening up for December.\n\nThanks,\nMike Sovak"
+        }
+      ]
+    },
+    {
       "id": "riverside-265-6d",
       "address": "265 Riverside Drive",
       "unit": "#6D",
