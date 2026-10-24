@@ -19,6 +19,12 @@
           "channel": "StreetEasy message",
           "to": "Doreen Courtright",
           "body": "Hi Doreen,\n\nMy wife and I are interested in #12B at 269 West 72nd. We're looking for a 1BR on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to see it this week and can apply right away.\n\nA few questions:\n1. We have a well-behaved dog. The description says no pets, but the listing policies say dogs are allowed. Which is it?\n2. Would the owner consider a December 15 start?\n3. How long does board approval usually take here?\n\nIf the timing doesn't work on this one, we'd love to hear about anything similar you have opening up for December.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Text",
+          "to": "Doreen Courtright",
+          "body": "Hi Doreen, this is Mike Sovak. I just sent you a message on StreetEasy about 269 W 72nd #12B. Quick first question: is a dog OK in the building? If so, my wife and I would love to see it. We're looking at a 12/15 move-in and have everything ready to apply. Thanks!"
         }
       ]
     },
@@ -33,7 +39,7 @@
       "contact": "Paul Morrissette (781) 812-3140 · Luke Joyce (609) 906-8403 · REAL New York office (212) 279-1289",
       "phone": "(781) 812-3140",
       "link": "https://streeteasy.com/building/265-riverside-drive-new_york/6d",
-      "notes": "Between 98th and 99th on Riverside Park, 1/2/3 at 96th. Prewar co-op, 64 units, 11 floors. Described as extra large 1BR (no sq ft listed): king bedroom, dining alcove, separate kitchen, big closets, new renovations. Co-op sublet, so board approval needed. Rented 10/2025 at the same $4,750, so current tenant is leaving after one year. Listed 10/16, available now, 22 saves. Listing says email for showings, but no email shown.",
+      "notes": "Between 98th and 99th on Riverside Park, 1/2/3 at 96th. Prewar co-op, 64 units, 11 floors. Described as extra large 1BR (no sq ft listed): king bedroom, dining alcove, separate kitchen, big closets, new renovations. Co-op sublet, so board approval needed. Rented 10/2025 at the same $4,750, so current tenant is leaving after one year. Listed 10/16, available now, 22 saves. Listing says email for showings, but no email shown.\nPaul (10/24): needs a 12/1 move-in at the latest.",
       "priority": "Paul Morrissette",
       "activity": [
         {
@@ -53,6 +59,12 @@
           "channel": "Text",
           "to": "Luke Joyce",
           "body": "Hi Luke, this is Mike Sovak. I just sent a message on StreetEasy about 265 Riverside #6D. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we set up a showing? If the timing doesn't work, we'd love to hear about anything similar for December. Thanks!"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Their reply",
+          "to": "Paul Morrissette",
+          "body": "We would need a 12/1 at the latest move in\n[Sent a video of the unit]\nHere is a video"
         }
       ]
     },
