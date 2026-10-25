@@ -11,7 +11,7 @@
       "contact": "Josh Kay (646) 505-9088",
       "phone": "(646) 505-9088",
       "link": "https://streeteasy.com/building/102-west-79-street-new_york/6de",
-      "notes": "79th between Columbus and Amsterdam, by the Natural History Museum. B/C at 81st, 1 at 79th. Prewar 1931, 39 units, 6 floors, top floor unit. No doorman. 1 month free on a 12-month lease ($3,845 net). Open kitchen, French doors to a queen-size bedroom, walk-in closet, renovated bath with glass shower. Building is listed as pet friendly and some units have W/D; confirm both for this unit. Listed 10/19, available now, 33 saves.",
+      "notes": "79th between Columbus and Amsterdam, by the Natural History Museum. B/C at 81st, 1 at 79th. Prewar 1931, 39 units, 6 floors, top floor unit. No doorman. 1 month free on a 12-month lease ($3,845 net). Open kitchen, French doors to a queen-size bedroom, walk-in closet, renovated bath with glass shower. Building is listed as pet friendly and some units have W/D; confirm both for this unit. Listed 10/19, available now, 33 saves.\nJosh (10/25): 12/15 too far out, needs a sooner move-in.",
       "priority": "Josh Kay",
       "activity": [
         {
@@ -25,8 +25,23 @@
           "channel": "Text",
           "to": "Josh Kay",
           "body": "Hi Josh, this is Mike Sovak. I just sent you a message on StreetEasy about 102 W 79th #6DE. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week? Also, is a dog OK in the building? Thanks!"
+        },
+        {
+          "date": "2026-10-25",
+          "channel": "Their reply",
+          "to": "Josh Kay",
+          "body": "That's too far. Need sooner move in"
+        },
+        {
+          "date": "2026-10-25",
+          "channel": "Text",
+          "to": "Josh Kay",
+          "body": "Ok, thanks for letting me know. Keep me posted if you ever have listings that might fit that timeline"
         }
-      ]
+      ],
+      "unavailable": true,
+      "goneDate": "2026-10-25",
+      "epitaph": "One month free. Zero months together."
     },
     {
       "id": "w72-269-12b",
@@ -104,7 +119,31 @@
           "date": "2026-10-24",
           "channel": "Their reply",
           "to": "Paul Morrissette",
-          "body": "Flat no on the concession (12/15 rent start or $4,550)."
+          "body": "No"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Text",
+          "to": "Paul Morrissette",
+          "body": "Ok, we may still be interested. Would we be able to come see it tomorrow, Monday, or Tuesday?"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Their reply",
+          "to": "Paul Morrissette",
+          "body": "Can you do today?"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Text",
+          "to": "Paul Morrissette",
+          "body": "What time?\nWe live in FiDi so it'd take us like 45 minutes to get up there, but if we can meet before 6, yeah we can come up"
+        },
+        {
+          "date": "2026-10-25",
+          "channel": "Text",
+          "to": "Paul Morrissette",
+          "body": "Could any of those other days work to come see it?"
         }
       ],
       "traction": true
