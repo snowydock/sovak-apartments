@@ -1,6 +1,33 @@
 {
   "places": [
     {
+      "id": "wea-752-dec-2br",
+      "address": "752 West End Avenue",
+      "unit": "December 2BR (unit TBD)",
+      "building": "The Paris New York",
+      "amenities": "Full-time doorman, Concierge, Elevator, Gym, Roof deck, Live-in super, Package room, In-unit W/D",
+      "mgmt": "Stellar Management (direct, no broker)",
+      "contact": "Wei Zheng, Leasing Associate · wzheng@stellarmanagement.com",
+      "email": "wzheng@stellarmanagement.com",
+      "link": "https://streeteasy.com/building/the-paris-new-york",
+      "notes": "Off-market lead from Wei after #2H leased: a 2BR/1BA with in-unit W/D possibly opening in December. Price unknown; a 2BR here likely runs well above the 1BR range, so ask about rent and any concession. ~97th & West End.",
+      "priority": "Wei Zheng (Stellar leasing)",
+      "activity": [
+        {
+          "date": "2026-10-26",
+          "channel": "Their reply",
+          "to": "Wei Zheng (Stellar leasing)",
+          "body": "Hi Mike,\n\nThank you for your thoughtful inquiry and interest in the Paris at 752 West End Ave.\n\n2H has been leased.\n\nWe may have another unit available in December. It's a 2bx1b with in-unit washer/dryer.\n\nIf you have any questions, feel free to let us know\n\nBest,\nWei Zheng\nLeasing Associate"
+        },
+        {
+          "date": "2026-10-26",
+          "channel": "Email",
+          "to": "Wei Zheng (Stellar leasing)",
+          "body": "Hi Wei, can you please send me more information on this unit that is coming available in December?\n\nMike S."
+        }
+      ]
+    },
+    {
       "id": "w79-102-6de",
       "address": "102 West 79th Street",
       "unit": "#6DE",
@@ -51,7 +78,7 @@
       "rent": 4595,
       "amenities": "Virtual doorman, Elevator, Laundry in bldg, Live-in super, Bike room, Dishwasher, South-facing",
       "mgmt": "Douglas Elliman",
-      "contact": "Doreen Courtright (212) 319-5499",
+      "contact": "Doreen Courtright (212) 319-5499 · mobile (917) 365-3091 · DCOURTRIGHT@elliman.com",
       "phone": "(212) 319-5499",
       "link": "https://streeteasy.com/building/269-west-72-street-new_york/12b",
       "notes": "72nd between Broadway and West End, 1/2/3 at 72nd. 1924 co-op, 58 units, 12th floor. Sunny south-facing living room and bedroom (fits a king), en-suite bath with tub, windowed kitchen, big closets. Virtual doorman only. PETS: description says no pets, policies say cats and dogs allowed; confirm before anything else. Co-op board approval. Building fees roughly $1,700 non-refundable plus $500 refundable move-in deposit. Listed 10/21, available now, 29 saves. Open house Sat 10/24 12:30 to 2:30, by appointment.",
@@ -68,8 +95,17 @@
           "channel": "Text",
           "to": "Doreen Courtright",
           "body": "Hi Doreen, this is Mike Sovak. I just sent you a message on StreetEasy about 269 W 72nd #12B. Quick first question: is a dog OK in the building? If so, my wife and I would love to see it. We're looking at a 12/15 move-in and have everything ready to apply. Thanks!"
+        },
+        {
+          "date": "2026-10-24",
+          "channel": "Their reply",
+          "to": "Doreen Courtright",
+          "body": "Hi Mike\nWe already have several applications and the owner doesn't want pets. If I hear of anything else, I will let you know.\nBest regards,\nDoreen"
         }
-      ]
+      ],
+      "unavailable": true,
+      "goneDate": "2026-10-24",
+      "epitaph": "No dogs allowed. Zurie was robbed."
     },
     {
       "id": "riverside-265-6d",
@@ -319,7 +355,7 @@
       "address": "752 West End Avenue",
       "amenities": "Full-time doorman, Concierge, Elevator, Laundry in bldg, Gym, Roof deck, Live-in super, Package room",
       "building": "The Paris New York",
-      "contact": "Stellar leasing team (no agent or phone on listing)",
+      "contact": "Wei Zheng, Leasing Associate · wzheng@stellarmanagement.com",
       "link": "https://streeteasy.com/building/the-paris-new-york/02h",
       "mgmt": "Stellar Management (direct, no broker)",
       "net": 4351,
@@ -332,8 +368,18 @@
           "channel": "StreetEasy message",
           "date": "2026-10-23",
           "to": "Stellar Management leasing"
+        },
+        {
+          "date": "2026-10-26",
+          "channel": "Their reply",
+          "to": "Wei Zheng (Stellar leasing)",
+          "body": "2H has been leased."
         }
-      ]
+      ],
+      "unavailable": true,
+      "goneDate": "2026-10-26",
+      "epitaph": "Two months free, gone in three days.",
+      "email": "wzheng@stellarmanagement.com"
     }
   ]
 }
