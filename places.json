@@ -44,11 +44,11 @@
       "sqft": 634,
       "amenities": "Full-time doorman, Concierge, Elevator, Gym, Laundry in bldg, Package room, Playroom, Business lounge, Garage, Central air, Dishwasher, Pets allowed",
       "mgmt": "Living New York (owner: 160 Riverside Boulevard LLC)",
-      "contact": "Evan Osur (917) 903-4300 · Valeriia Hordiienko (908) 274-9403 · Osur Team office (212) 760-2690",
+      "contact": "Evan Osur (917) 903-4300 · Valeriia Hordiienko (908) 274-9403 · Osur Team office (212) 760-2690 · valeriia@livingny.com",
       "phone": "(917) 903-4300",
       "link": "https://streeteasy.com/building/160-riverside-boulevard/3d",
-      "notes": "Riverside Blvd around 68th, by Riverside Park South. 1/2/3 at 72nd. 1999 tower, 455 units, 33 floors, 9 units available, so more room on timing and other December units. 634 sq ft, 3rd floor, north facing, open kitchen, central air. Monthly fees: utility share ~$60-70, amenity $45, dog $50 (plus $200 one-time), so about $4,760 all in. Listing mentions specials for new residents; ask. Openigloo 3.9/5 from 18 reviews; complaints about elevators, construction noise and water shutoffs. Good Cause building. Listed 10/15, available now, 44 saves.\nWe also have a cat: under 15 lbs adds $100 one-time and $25/mo, so about $4,785 all in.",
-      "priority": "Evan Osur",
+      "notes": "Riverside Blvd around 68th, by Riverside Park South. 1/2/3 at 72nd. 1999 tower, 455 units, 33 floors, 9 units available, so more room on timing and other December units. 634 sq ft, 3rd floor, north facing, open kitchen, central air. Monthly fees: utility share ~$60-70, amenity $45, dog $50 (plus $200 one-time), so about $4,760 all in. Listing mentions specials for new residents; ask. Openigloo 3.9/5 from 18 reviews; complaints about elevators, construction noise and water shutoffs. Good Cause building. Listed 10/15, available now, 44 saves.\nWe also have a cat: under 15 lbs adds $100 one-time and $25/mo, so about $4,785 all in.\nValeriia (10/26): latest lease start 12/10, 12-month, no concession, pets under 35 lbs only (Zurie is ~39).",
+      "priority": "Valeriia Hordiienko",
       "activity": [
         {
           "date": "2026-10-26",
@@ -67,8 +67,15 @@
           "channel": "Text",
           "to": "Valeriia Hordiienko",
           "body": "Hi Valeriia, this is Mike Sovak. I just sent a message on StreetEasy about 160 Riverside Blvd #3D. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week? If 3D doesn't work on timing, we'd love to hear about other 1BRs in the building for December. Thanks!"
+        },
+        {
+          "date": "2026-10-26",
+          "channel": "Their reply",
+          "to": "Valeriia Hordiienko",
+          "body": "Hi Mike,\n\nThank you for reaching out!\nWhat days and times work for a tour?\n\n- we can do 12/10 as the latest lease start date right now\n- 12 month lease, no concessions on this one\n- pets are allowed under 35 lbs, theres a pet fee. No fees or weight restrictions apply if it's an ESA or service animal, of course\n\nThank you"
         }
-      ]
+      ],
+      "traction": true
     },
     {
       "id": "wea-752-dec-2br",
