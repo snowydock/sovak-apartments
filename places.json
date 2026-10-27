@@ -1,6 +1,27 @@
 {
   "places": [
     {
+      "id": "wea-75-p18b",
+      "address": "75 West End Avenue",
+      "unit": "#P18B",
+      "building": "West End Towers",
+      "rent": 5250,
+      "amenities": "Doorman, Concierge, Elevator, Gym, Indoor pool, Residents' lounge, Playroom, Garage, Package room, In-unit W/D, Dishwasher, Pets allowed",
+      "mgmt": "Brodsky (direct, no broker)",
+      "contact": "West End Towers Leasing (number hidden on StreetEasy: tap Show phone number)",
+      "link": "https://streeteasy.com/building/75-west-end-avenue-new_york/p18b",
+      "notes": "West End and 63rd-ish, Lincoln Square. 1994 complex of 4 towers, ~1,000 units, renovated 2022, 11 units available, so December options likely. 18th floor, renovated, pass-through kitchen, brand-new W/D. No sq ft listed. Optional amenity fee $100 per person/mo ($200 for both of us) for pool/gym access. $1,000 reduced security deposit for qualified applicants. Rented at $4,800 in January 2026. Free shuttle to Columbus Circle. Farthest walk to the subway so far (1 at 66th, ~7 min).",
+      "priority": "West End Towers Leasing",
+      "activity": [
+        {
+          "date": "2026-10-27",
+          "channel": "StreetEasy message",
+          "to": "West End Towers Leasing",
+          "body": "Hi,\n\nMy wife and I are interested in #P18B at West End Towers. We're looking for a 1BR on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to tour this week and can apply right away.\n\nCould a lease on #P18B start December 15? If not, do you have other 1BRs in the complex opening up around then? Also, do you know the square footage of this one?\n\nThanks,\nMike Sovak"
+        }
+      ]
+    },
+    {
       "id": "w84-324-2a",
       "address": "324 West 84th Street",
       "unit": "#2A",
