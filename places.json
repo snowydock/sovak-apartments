@@ -246,7 +246,10 @@
           "Decent closets",
           "Laundry in basement"
         ]
-      }
+      },
+      "unavailable": true,
+      "goneDate": "2026-10-27",
+      "epitaph": "Dark, small, and staring at a parking garage. 2/10."
     },
     {
       "id": "wea-752-dec-2br",
