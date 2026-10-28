@@ -133,7 +133,15 @@
       ],
       "phone": "(347) 703-0996",
       "email": "Monica.Penaranda@elliman.com",
-      "traction": true
+      "traction": true,
+      "nickname": "The Brownstone",
+      "videos": [
+        {
+          "src": "media/w88-304-3-1.mp4",
+          "poster": "media/w88-304-3-1.jpg",
+          "caption": "Walkthrough"
+        }
+      ]
     },
     {
       "id": "w85-250-9a",

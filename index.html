@@ -97,6 +97,13 @@ a{color:var(--accent)}
 .prio{font-size:13px;color:var(--muted)}
 .prio summary{cursor:pointer;font-weight:600}
 .prio ol{margin:8px 0 0;padding-left:20px}
+
+.card.nick{border:2px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,#f7e7a1,#c9a23f 30%,#fff3c4 50%,#a8822a 70%,#f0d98a) border-box;box-shadow:0 0 0 3px rgba(201,162,63,.22),0 6px 18px rgba(168,130,42,.22)}
+.nickname{font-family:var(--f-display);font-style:italic;font-weight:600;font-size:15px;color:var(--gold);letter-spacing:.02em;display:block;margin-bottom:2px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.vids figure{margin:0}
+.vids video{width:100%;max-height:420px;border-radius:10px;background:#000;display:block}
+.vids figcaption{font-size:12px;color:var(--muted);margin-top:4px}
 /* ===================== THE GRAVEYARD ===================== */
 .yard-wrap{display:flex;flex-direction:column;gap:12px;margin-top:8px}
 .yard-toggle{align-self:center;display:inline-flex;align-items:center;gap:8px;background:none;border:1px dashed var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s,color .2s}
@@ -228,6 +235,7 @@ a{color:var(--accent)}
     <dl id="dInfo"></dl>
     <div class="tour" id="dTour" hidden></div>
     <p class="notes" id="dNotes" hidden></p>
+    <div id="dVidWrap" hidden><h3 style="margin-bottom:8px">Videos</h3><div class="vids" id="dVids"></div></div>
     <h3>Activity</h3>
     <div id="log"></div>
   </div>
@@ -253,19 +261,19 @@ const title=r=>`${esc(r.address)}${r.unit?" "+esc(r.unit):""}`;
 
 function render(){
   const q=$("q").value.trim().toLowerCase();
-  const list=rows.filter(r=>!q||[r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities,(r.tour&&r.tour.notes||[]).join(" ")].join(" ").toLowerCase().includes(q))
-    .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||(!!b.traction-!!a.traction)||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
+  const list=rows.filter(r=>!q||[r.nickname,r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities,(r.tour&&r.tour.notes||[]).join(" ")].join(" ").toLowerCase().includes(q))
+    .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||(!!b.nickname-!!a.nickname)||(!!(b.traction||b.nickname)-!!(a.traction||a.nickname))||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
   const dead=list.filter(r=>r.unavailable);
   renderYard(dead);
   $("grid").innerHTML=list.filter(r=>!r.unavailable).map(r=>{
     const amen=(r.amenities||"").split(",").map(x=>x.trim()).filter(Boolean);
     const la=lastOf(r), n=(r.activity||[]).length;
-    return `<article class="card${r.traction?" hot":""}" data-open="${esc(r.id)}" tabindex="0">
+    return `<article class="card${r.nickname?" nick":(r.traction?" hot":"")}" data-open="${esc(r.id)}" tabindex="0">
       <div class="top">
-        <h3 class="addr"><span class="${r.unavailable?"struck":""}">${title(r)}</span><small>${esc(r.building||r.mgmt||"")}</small></h3>
+        <h3 class="addr">${r.nickname?`<span class="nickname">${esc(r.nickname)}</span>`:""}<span class="${r.unavailable?"struck":""}">${title(r)}</span><small>${esc(r.building||r.mgmt||"")}</small></h3>
         <div class="rent">${rentHtml(r)}</div>
       </div>
-      ${(r.traction||r.tour)?`<div class="pills">${r.traction?`<span class="pill hot">In motion</span>`:""}${r.tour?`<span class="pill hot">Toured</span>`:""}</div>`:""}
+      ${(r.traction||r.nickname||r.tour)?`<div class="pills">${(r.traction||r.nickname)?`<span class="pill hot">In motion</span>`:""}${r.tour?`<span class="pill hot">Toured</span>`:""}</div>`:""}
       ${r.tour?`<div class="pills"><span class="pill score">${esc(r.tour.by)}: ${esc(r.tour.score)}/10</span></div>`:""}
       ${amen.length?`<div class="pills">${amen.map(a=>`<span class="pill">${esc(a)}</span>`).join("")}</div>`:""}
       <div class="last"><span>${la?`Last: <b>${esc(la.channel)}</b> · ${fmtDate(la.date)}${n>1?` · ${n} entries`:""}`:"No activity yet"}</span>${r.link?`<a class="se" href="${esc(r.link)}" target="_blank" rel="noopener">View on StreetEasy ↗</a>`:""}</div>
@@ -312,7 +320,7 @@ function phonesHtml(r){
 
 function openDetail(id){
   const r=rows.find(x=>x.id===id); if(!r)return; openId=id;
-  $("dTitle").innerHTML=`<span class="${r.unavailable?"struck":""}">${title(r)}</span>${r.unavailable?"<br><span class='pill gone' style='margin-top:6px'>No longer available</span>":""}${r.building?`<small>${esc(r.building)}</small>`:""}`;
+  $("dTitle").innerHTML=`${r.nickname?`<span class="nickname">${esc(r.nickname)}</span>`:""}<span class="${r.unavailable?"struck":""}">${title(r)}</span>${r.unavailable?"<br><span class='pill gone' style='margin-top:6px'>No longer available</span>":""}${r.building?`<small>${esc(r.building)}</small>`:""}`;
   const fees=Number(r.fees)||0;
   const info=[
     ["Rent", r.rent?`${money(r.rent)} base${fees?" + "+money(fees)+" fees":""}${r.net?` · ${money(r.net)} net effective`:""}`:""],
@@ -324,6 +332,7 @@ function openDetail(id){
     ["Email", r.email?`<a href="mailto:${esc(r.email)}">${esc(r.email)}</a>`:""],
   ].filter(x=>x[1]);
   $("dInfo").innerHTML=info.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
+  const vids=r.videos||[]; $("dVidWrap").hidden=!vids.length; $("dVids").innerHTML=vids.map(v=>`<figure><video controls playsinline preload="none" src="${esc(v.src)}" ${v.poster?`poster="${esc(v.poster)}"`:""}></video>${v.caption?`<figcaption>${esc(v.caption)}</figcaption>`:""}</figure>`).join("");
   $("dTour").hidden=!r.tour; if(r.tour)$("dTour").innerHTML=`<h4>Tour notes · ${esc(r.tour.by)} <b>${esc(r.tour.score)}/10</b></h4><ul>${r.tour.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`;
   $("dNotes").hidden=!r.notes; $("dNotes").textContent=r.notes||"";
   $("dLink").hidden=!r.link; if(r.link)$("dLink").href=r.link;
@@ -350,7 +359,7 @@ function openDetail(id){
   $("log").querySelectorAll("details").forEach(d=>d.addEventListener("toggle",()=>setClosed(d.dataset.key,!d.open)));
   $("detail").hidden=false; document.body.style.overflow="hidden"; $("dClose").focus();
 }
-function closeDetail(){ $("detail").hidden=true; openId=null; document.body.style.overflow=""; }
+function closeDetail(){ document.querySelectorAll("#dVids video").forEach(v=>v.pause()); $("detail").hidden=true; openId=null; document.body.style.overflow=""; }
 
 $("grid").addEventListener("click",e=>{if(e.target.closest("a"))return;const c=e.target.closest("[data-open]");if(c)openDetail(c.dataset.open);});
 $("grid").addEventListener("keydown",e=>{if(e.key!=="Enter"||e.target.closest("a"))return;const c=e.target.closest("[data-open]");if(c)openDetail(c.dataset.open);});
