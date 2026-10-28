@@ -44,7 +44,7 @@
       "phone": "(917) 903-4300",
       "email": null,
       "link": "https://streeteasy.com/building/160-riverside-boulevard",
-      "notes": "Toured alongside #3D. 1 month free on a 16-month lease ($4,547 net). 661 sq ft, 4th floor, east facing. Same building rules as #3D: Valeriia said pets under 35 lbs (Zurie ~39, exception asked). Fees ~$65 utilities, $45 amenity, pets $50 + $25.",
+      "notes": "Toured alongside #3D. 1 month free on a 16-month lease ($4,547 net). 661 sq ft, 4th floor, east facing. Same building rules as #3D: Valeriia said pets under 35 lbs (Zurie ~39, exception asked). Fees ~$65 utilities, $45 amenity, pets $50 + $25.\nZurie's weight (~39 vs 35 lb limit) not raised with Valeriia yet.",
       "priority": "Valeriia Hordiienko",
       "traction": true,
       "tour": {
@@ -65,7 +65,38 @@
           "W/D on same floor ($3 per load)"
         ]
       },
-      "activity": []
+      "activity": [
+        {
+          "date": "2026-10-26",
+          "channel": "Email",
+          "to": "Valeriia Hordiienko",
+          "body": "Hi Valeriia, pet fees are fine and 12/10 could be feasible for us.\nMy wife is off today and tomorrow and could come tour. If neither works, I can get you our availability for this weekend or next week.\n\nMike S."
+        },
+        {
+          "date": "2026-10-26",
+          "channel": "Their reply",
+          "to": "Valeriia Hordiienko",
+          "body": "Would 4.15 pm tomorrow work for you?"
+        },
+        {
+          "date": "2026-10-27",
+          "channel": "Email",
+          "to": "Valeriia Hordiienko",
+          "body": "Yes, my wife Ali (CC'd) can come see the unit today at 4:15pm.\n\nMike S."
+        },
+        {
+          "date": "2026-10-27",
+          "channel": "Their reply",
+          "to": "Valeriia Hordiienko",
+          "body": "Great, I'll see her at 4.15 pm today"
+        },
+        {
+          "date": "2026-10-27",
+          "channel": "Tour",
+          "to": "Valeriia Hordiienko",
+          "body": "Ali toured #3D and #406 at 4:15pm. See tour notes."
+        }
+      ]
     },
     {
       "id": "w88-304-3",
@@ -76,7 +107,7 @@
       "sqft": 700,
       "amenities": "Brownstone, Laundry in bldg, On-site super, Fireplace, Exposed brick, Heat & water included, Pets allowed",
       "mgmt": "Douglas Elliman",
-      "contact": "Monica Penaranda (347) 703-0996",
+      "contact": "Monica Penaranda (347) 703-0996 · Monica.Penaranda@elliman.com",
       "link": "https://streeteasy.com/building/304-west-88-street-new_york/3",
       "notes": "88th between West End and Riverside, 1 at 86th two blocks. 1921 brownstone co-op, 20 units, 4 stories. 3rd floor walk-up (3 flights). 700 sq ft, soaring ceilings, working fireplace, 6 ft north-facing windows, exposed brick, full kitchen, storage, bike rack. Furnished or unfurnished, 1-2 year lease. Heat and water included. Co-op board: $750 application + $50 credit check per person + $250 to management (~$1,100 non-refundable), $1,000 refundable move-out deposit; owner pays the move-in fee. Board approval needed before 12/15, and we're away 12/2-12/11. Scaffold recently removed. Listed 10/13, available now, 35 saves.",
       "priority": "Monica Penaranda",
@@ -92,9 +123,17 @@
           "channel": "Text",
           "to": "Monica Penaranda",
           "body": "Hi Monica, this is Mike Sovak. I just sent you a message on StreetEasy about 304 W 88th #3. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this weekend, Saturday or Sunday? Thanks!"
+        },
+        {
+          "date": "2026-10-27",
+          "channel": "Their reply",
+          "to": "Monica Penaranda",
+          "body": "Yes!!! Available . I maybe able to show tomorrow around 4:30-5pm\n\nMaybe in the weekend I will let you know what day ."
         }
       ],
-      "phone": "(347) 703-0996"
+      "phone": "(347) 703-0996",
+      "email": "Monica.Penaranda@elliman.com",
+      "traction": true
     },
     {
       "id": "w85-250-9a",
