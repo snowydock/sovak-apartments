@@ -154,7 +154,7 @@
       "contact": "Kohler McKenzie (802) 318-7935 · Nick Sliva, Pure Leasing office (929) 368-5969",
       "phone": "(802) 318-7935",
       "link": "https://streeteasy.com/building/250-west-85th-street-new_york/9a",
-      "notes": "85th and Broadway, 1 train at 86th under a block away. 1922 prewar, 125 units, 15 floors, 9th floor with city views. Newly renovated: white oak floors, marble bath, W/D listed. 1 month free on 12 months ($5,225 net). Listed 10/27. Rented for $3,795 in April 2025, so +50% after renovation. Building was sold to Benchmark in 2025 for $66M and has some stabilized units; worth asking whether #9A was ever stabilized and checking its rent history. Openigloo 3.6/5 from 11 reviews (heat, pests, slow repairs). Good Cause building. Same Pure Leasing office as 166 W 75th.",
+      "notes": "85th and Broadway, 1 train at 86th under a block away. 1922 prewar, 125 units, 15 floors, 9th floor with city views. Newly renovated: white oak floors, marble bath, W/D listed. 1 month free on 12 months ($5,225 net). Listed 10/27. Rented for $3,795 in April 2025, so +50% after renovation. Building was sold to Benchmark in 2025 for $66M and has some stabilized units; worth asking whether #9A was ever stabilized and checking its rent history. Openigloo 3.6/5 from 11 reviews (heat, pests, slow repairs). Good Cause building. Same Pure Leasing office as 166 W 75th.\nKohler books showings through a Calendly link (sent by text 10/28).",
       "priority": "Kohler McKenzie",
       "activity": [
         {
@@ -168,6 +168,33 @@
           "channel": "Text",
           "to": "Kohler McKenzie",
           "body": "Hi Kohler, this is Mike Sovak. I just sent a message on StreetEasy about 250 W 85th #9A. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week? Thanks!"
+        },
+        {
+          "date": "2026-10-28",
+          "channel": "Their reply",
+          "to": "Kohler McKenzie",
+          "body": "[Sent a video of the unit, photos of the building gym, and a Calendly link: \"250 West 85th Street - Kohler McKenzie\"]"
+        },
+        {
+          "date": "2026-10-28",
+          "channel": "Text",
+          "to": "Kohler McKenzie",
+          "body": "Hi Kohler, thanks for the quick response and video. Does the calendly schedule a time to view the unit?\n\ne.g. if I select this Saturday for 10am we would be meeting you at the unit to see it, correct?"
+        },
+        {
+          "date": "2026-10-28",
+          "channel": "Their reply",
+          "to": "Kohler McKenzie",
+          "body": "Yes. Those are the times I am showing the buidling n"
+        }
+      ],
+      "nickname": "Expensive, has it all",
+      "traction": true,
+      "videos": [
+        {
+          "src": "media/w85-250-9a-1.mp4",
+          "poster": "media/w85-250-9a-1.jpg",
+          "caption": "Unit video from Kohler"
         }
       ]
     },
