@@ -1,6 +1,44 @@
 {
   "places": [
     {
+      "id": "rsb-160-406",
+      "address": "160 Riverside Boulevard",
+      "unit": "#406",
+      "building": "Riverside South, Lincoln Square",
+      "rent": 4850,
+      "net": 4547,
+      "fees": 160,
+      "sqft": 661,
+      "amenities": "Full-time doorman, Concierge, Elevator, Gym, Laundry in bldg, Package room, Playroom, Business lounge, Garage, Central air, Dishwasher, Pets allowed",
+      "mgmt": "Living New York (owner: 160 Riverside Boulevard LLC)",
+      "contact": "Evan Osur (917) 903-4300 · Valeriia Hordiienko (908) 274-9403 · Osur Team office (212) 760-2690 · valeriia@livingny.com",
+      "phone": "(917) 903-4300",
+      "email": null,
+      "link": "https://streeteasy.com/building/160-riverside-boulevard",
+      "notes": "Toured alongside #3D. 1 month free on a 16-month lease ($4,547 net). 661 sq ft, 4th floor, east facing. Same building rules as #3D: Valeriia said pets under 35 lbs (Zurie ~39, exception asked). Fees ~$65 utilities, $45 amenity, pets $50 + $25.",
+      "priority": "Valeriia Hordiienko",
+      "traction": true,
+      "tour": {
+        "by": "Ali",
+        "score": 7,
+        "notes": [
+          "661 square feet",
+          "Great kitchen, lots of cabinets",
+          "East facing windows, pretty dark late afternoon",
+          "Great main space (big enough for couch/TV, dining table, and desk)",
+          "Window overlooks a nice tree",
+          "Respectable closets x2",
+          "Big enough bedroom",
+          "Good bathroom with medicine cabinets x3, under sink cabinet",
+          "Great gym, everything we'd need",
+          "Location of building not quite what we'd like (Lincoln Square)",
+          "Park/Zurie pee access right across street",
+          "W/D on same floor ($3 per load)"
+        ]
+      },
+      "activity": []
+    },
+    {
       "id": "w88-304-3",
       "address": "304 West 88th Street",
       "unit": "#3",
@@ -76,7 +114,22 @@
           "to": "West End Towers Leasing",
           "body": "Hi,\n\nMy wife and I are interested in #P18B at West End Towers. We're looking for a 1BR on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to tour this week and can apply right away.\n\nCould a lease on #P18B start December 15? If not, do you have other 1BRs in the complex opening up around then? Also, do you know the square footage of this one?\n\nThanks,\nMike Sovak"
         }
-      ]
+      ],
+      "tour": {
+        "by": "Ali",
+        "score": 5,
+        "notes": [
+          "Lots of natural light",
+          "Overlooks pretty city building view",
+          "Great kitchen storage",
+          "2 decent hall closets, bedroom closet mostly consumed by W/D in unit",
+          "Workable square footage",
+          "Gym huge and has everything, nice communal workspace",
+          "$100 per person per month for all amenities",
+          "4 minutes to Zurie pee spot",
+          "All-in-all, really expensive but could technically be viable if absolutely necessary... want to love it more for the price"
+        ]
+      }
     },
     {
       "id": "w84-324-2a",
@@ -153,7 +206,18 @@
           "body": "Hi Mike,\n\nThank you for reaching out!\nWhat days and times work for a tour?\n\n- we can do 12/10 as the latest lease start date right now\n- 12 month lease, no concessions on this one\n- pets are allowed under 35 lbs, theres a pet fee. No fees or weight restrictions apply if it's an ESA or service animal, of course\n\nThank you"
         }
       ],
-      "traction": true
+      "tour": {
+        "by": "Ali",
+        "score": 2,
+        "notes": [
+          "Dark",
+          "Overlooks a parking garage",
+          "Not big enough",
+          "Good kitchen storage",
+          "Decent closets",
+          "Laundry in basement"
+        ]
+      }
     },
     {
       "id": "wea-752-dec-2br",
@@ -536,5 +600,15 @@
       "epitaph": "Two months free, gone in three days.",
       "email": "wzheng@stellarmanagement.com"
     }
+  ],
+  "priorities": [
+    "Square footage / layout",
+    "Storage (closets, cabinets)",
+    "Proximity to UWS proper (72nd-88th)",
+    "Proximity to Riverside vs. Central Park",
+    "Price",
+    "In-unit W/D",
+    "Gym",
+    "Natural light / south-facing windows"
   ]
 }

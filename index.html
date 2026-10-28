@@ -87,6 +87,16 @@ a{color:var(--accent)}
 .card.hot{border:2px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,linear-gradient(135deg,#f4f6f8,#9aa3ad 30%,#e6e9ec 50%,#7f8892 70%,#dfe3e7) border-box;box-shadow:0 0 0 3px rgba(160,170,180,.18),0 6px 18px rgba(120,130,140,.18)}
 .pill.hot{background:linear-gradient(135deg,#eef1f4,#b9c0c7);color:#2f363d;font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:11px;padding:3px 9px}
 @media (prefers-color-scheme: dark){.card.hot{box-shadow:0 0 0 3px rgba(200,210,220,.12),0 6px 18px rgba(0,0,0,.4)}}
+
+.pill.score{background:#1b2420;color:#fff;font-weight:600}
+@media (prefers-color-scheme: dark){.pill.score{background:#e5ece8;color:#141a17}}
+.tour{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;background:var(--bg)}
+.tour h4{margin:0 0 6px;font-size:13px;display:flex;gap:8px;align-items:baseline}
+.tour h4 b{font-family:var(--f-mono);font-size:16px}
+.tour ul{margin:0;padding-left:18px;font-size:14px}
+.prio{font-size:13px;color:var(--muted)}
+.prio summary{cursor:pointer;font-weight:600}
+.prio ol{margin:8px 0 0;padding-left:20px}
 /* ===================== THE GRAVEYARD ===================== */
 .yard-wrap{display:flex;flex-direction:column;gap:12px;margin-top:8px}
 .yard-toggle{align-self:center;display:inline-flex;align-items:center;gap:8px;background:none;border:1px dashed var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s,color .2s}
@@ -182,6 +192,7 @@ a{color:var(--accent)}
 <div class="wrap">
   <h1>UWS Apartment Hunt</h1>
   <input type="search" id="q" placeholder="Search address, landlord, contact, notes" aria-label="Search">
+  <details class="prio" id="prio" hidden><summary>Ali's priorities</summary><ol id="prioList"></ol></details>
   <p class="status" id="status" role="status">Loading…</p>
   <section class="grid" id="grid"></section>
   <div class="yard-wrap" id="yardWrap" hidden>
@@ -215,6 +226,7 @@ a{color:var(--accent)}
       <div class="row"><a class="btn primary" id="dLink" target="_blank" rel="noopener" hidden>View on StreetEasy ↗</a><button class="btn" type="button" id="dClose">Close</button></div>
     </div>
     <dl id="dInfo"></dl>
+    <div class="tour" id="dTour" hidden></div>
     <p class="notes" id="dNotes" hidden></p>
     <h3>Activity</h3>
     <div id="log"></div>
@@ -241,7 +253,7 @@ const title=r=>`${esc(r.address)}${r.unit?" "+esc(r.unit):""}`;
 
 function render(){
   const q=$("q").value.trim().toLowerCase();
-  const list=rows.filter(r=>!q||[r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities].join(" ").toLowerCase().includes(q))
+  const list=rows.filter(r=>!q||[r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities,(r.tour&&r.tour.notes||[]).join(" ")].join(" ").toLowerCase().includes(q))
     .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||(!!b.traction-!!a.traction)||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
   const dead=list.filter(r=>r.unavailable);
   renderYard(dead);
@@ -254,6 +266,7 @@ function render(){
         <div class="rent">${rentHtml(r)}</div>
       </div>
       ${r.traction?`<div class="pills"><span class="pill hot">In motion</span></div>`:""}
+      ${r.tour?`<div class="pills"><span class="pill score">${esc(r.tour.by)}: ${esc(r.tour.score)}/10</span></div>`:""}
       ${amen.length?`<div class="pills">${amen.map(a=>`<span class="pill">${esc(a)}</span>`).join("")}</div>`:""}
       <div class="last"><span>${la?`Last: <b>${esc(la.channel)}</b> · ${fmtDate(la.date)}${n>1?` · ${n} entries`:""}`:"No activity yet"}</span>${r.link?`<a class="se" href="${esc(r.link)}" target="_blank" rel="noopener">View on StreetEasy ↗</a>`:""}</div>
     </article>`;
@@ -311,6 +324,7 @@ function openDetail(id){
     ["Email", r.email?`<a href="mailto:${esc(r.email)}">${esc(r.email)}</a>`:""],
   ].filter(x=>x[1]);
   $("dInfo").innerHTML=info.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
+  $("dTour").hidden=!r.tour; if(r.tour)$("dTour").innerHTML=`<h4>Tour notes · ${esc(r.tour.by)} <b>${esc(r.tour.score)}/10</b></h4><ul>${r.tour.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`;
   $("dNotes").hidden=!r.notes; $("dNotes").textContent=r.notes||"";
   $("dLink").hidden=!r.link; if(r.link)$("dLink").href=r.link;
   const acts=(r.activity||[]).map((a,i)=>({...a,i}));
@@ -353,6 +367,7 @@ $("q").addEventListener("input",render);
 
 fetch("places.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{
   rows=d.places||[];
+  if(d.priorities&&d.priorities.length){$("prio").hidden=false;$("prioList").innerHTML=d.priorities.map(p=>`<li>${esc(p)}</li>`).join("");}
   const live=rows.filter(r=>!r.unavailable).length;
   $("status").textContent=`${rows.length} contacted · ${live} still available`;
   render();
