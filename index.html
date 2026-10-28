@@ -265,7 +265,7 @@ function render(){
         <h3 class="addr"><span class="${r.unavailable?"struck":""}">${title(r)}</span><small>${esc(r.building||r.mgmt||"")}</small></h3>
         <div class="rent">${rentHtml(r)}</div>
       </div>
-      ${r.traction?`<div class="pills"><span class="pill hot">In motion</span></div>`:""}
+      ${(r.traction||r.tour)?`<div class="pills">${r.traction?`<span class="pill hot">In motion</span>`:""}${r.tour?`<span class="pill hot">Toured</span>`:""}</div>`:""}
       ${r.tour?`<div class="pills"><span class="pill score">${esc(r.tour.by)}: ${esc(r.tour.score)}/10</span></div>`:""}
       ${amen.length?`<div class="pills">${amen.map(a=>`<span class="pill">${esc(a)}</span>`).join("")}</div>`:""}
       <div class="last"><span>${la?`Last: <b>${esc(la.channel)}</b> · ${fmtDate(la.date)}${n>1?` · ${n} entries`:""}`:"No activity yet"}</span>${r.link?`<a class="se" href="${esc(r.link)}" target="_blank" rel="noopener">View on StreetEasy ↗</a>`:""}</div>
