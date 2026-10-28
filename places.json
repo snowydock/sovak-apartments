@@ -1,6 +1,34 @@
 {
   "places": [
     {
+      "id": "w85-250-9a",
+      "address": "250 West 85th Street",
+      "unit": "#9A",
+      "rent": 5700,
+      "net": 5225,
+      "amenities": "Doorman, Elevator, Gym, Laundry in bldg, Live-in super, Package room, Storage, In-unit W/D, Dishwasher, Pets allowed",
+      "mgmt": "Pure Leasing (owner: Benchmark Real Estate Group)",
+      "contact": "Kohler McKenzie (802) 318-7935 · Nick Sliva, Pure Leasing office (929) 368-5969",
+      "phone": "(802) 318-7935",
+      "link": "https://streeteasy.com/building/250-west-85th-street-new_york/9a",
+      "notes": "85th and Broadway, 1 train at 86th under a block away. 1922 prewar, 125 units, 15 floors, 9th floor with city views. Newly renovated: white oak floors, marble bath, W/D listed. 1 month free on 12 months ($5,225 net). Listed 10/27. Rented for $3,795 in April 2025, so +50% after renovation. Building was sold to Benchmark in 2025 for $66M and has some stabilized units; worth asking whether #9A was ever stabilized and checking its rent history. Openigloo 3.6/5 from 11 reviews (heat, pests, slow repairs). Good Cause building. Same Pure Leasing office as 166 W 75th.",
+      "priority": "Kohler McKenzie",
+      "activity": [
+        {
+          "date": "2026-10-28",
+          "channel": "StreetEasy message",
+          "to": "Nick Sliva & Kohler McKenzie",
+          "body": "Hi Nick and Kohler,\n\nMy wife and I are interested in #9A at 250 West 85th. We're looking for a 1BR on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. We'd love to tour this week and can apply right away.\n\nCould a lease on #9A start December 15? If not, we'd love to hear about anything similar you have opening up for December.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-10-28",
+          "channel": "Text",
+          "to": "Kohler McKenzie",
+          "body": "Hi Kohler, this is Mike Sovak. I just sent a message on StreetEasy about 250 W 85th #9A. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week? Thanks!"
+        }
+      ]
+    },
+    {
       "id": "wea-75-p18b",
       "address": "75 West End Avenue",
       "unit": "#P18B",
