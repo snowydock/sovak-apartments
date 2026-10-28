@@ -1,6 +1,35 @@
 {
   "places": [
     {
+      "id": "ams-412-4f",
+      "address": "412 Amsterdam Avenue",
+      "unit": "#4F",
+      "building": "The Lennon II",
+      "rent": 4750,
+      "net": 4486,
+      "amenities": "2BR, In-unit W/D, Virtual doorman, Laundry in bldg, Live-in super, Dishwasher, Microwave, Pets welcome",
+      "mgmt": "SUMMIT SLS",
+      "contact": "Cindy Kieffer (917) 544-8626",
+      "phone": "(917) 544-8626",
+      "link": "https://streeteasy.com/building/the-lennon-ii/4f",
+      "notes": "Amsterdam at ~80th, 1 at 79th under a block. 1895 walk-up, 13 units, 5 stories, 4th floor, no elevator. 2BR/1BA, 4 rooms (a real living room), newly renovated, in-unit W/D. Virtual doorman (Carson app for packages). 1 month free on an 18-month lease ($4,486 net); ask what a 12-month looks like later. Went into contract 10/19 and came back 10/22, so a deal fell through. 130 saves, 16 days on market. Rented ~$4,650 in 2025. No sq ft listed.",
+      "priority": "Cindy Kieffer",
+      "activity": [
+        {
+          "date": "2026-10-27",
+          "channel": "StreetEasy message",
+          "to": "Cindy Kieffer",
+          "body": "Hi Cindy,\n\nMy wife and I are interested in #4F at 412 Amsterdam. We're looking for an apartment on the Upper West Side for a December 15 move-in and a 12-month lease.\n\nWe're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go. Could we see it this weekend, Saturday 10/31 or Sunday 11/1? We can apply right away.\n\nWould the landlord consider a December 15 start?\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-10-27",
+          "channel": "Text",
+          "to": "Cindy Kieffer",
+          "body": "Hi Cindy, this is Mike Sovak. I just sent you a message on StreetEasy about 412 Amsterdam #4F. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this weekend, Saturday or Sunday? Thanks!"
+        }
+      ]
+    },
+    {
       "id": "rsb-160-406",
       "address": "160 Riverside Boulevard",
       "unit": "#406",
