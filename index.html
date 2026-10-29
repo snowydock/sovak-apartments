@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>UWS Apartment Hunt</title>
+<title>Apartment Hunt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Creepster&family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap">
 <style>
@@ -104,6 +104,13 @@ a{color:var(--accent)}
 .vids figure{margin:0}
 .vids video{width:100%;max-height:420px;border-radius:10px;background:#000;display:block}
 .vids figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+
+.yard-wrap[hidden],.empty[hidden]{display:none}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line)}
+.tab{background:none;border:0;border-bottom:3px solid transparent;padding:8px 14px 9px;font-weight:600;font-size:15px;color:var(--muted);cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab .ct{font-family:var(--f-mono);font-size:12px;font-weight:500;margin-left:6px;color:var(--muted)}
+.empty{border:1px dashed var(--line);border-radius:10px;padding:28px;text-align:center;color:var(--muted)}
 /* ===================== THE GRAVEYARD ===================== */
 .yard-wrap{display:flex;flex-direction:column;gap:12px;margin-top:8px}
 .yard-toggle{align-self:center;display:inline-flex;align-items:center;gap:8px;background:none;border:1px dashed var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s,color .2s}
@@ -197,11 +204,16 @@ a{color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-  <h1>UWS Apartment Hunt</h1>
+  <h1>Apartment Hunt</h1>
   <input type="search" id="q" placeholder="Search address, landlord, contact, notes" aria-label="Search">
   <details class="prio" id="prio" hidden><summary>Ali's priorities</summary><ol id="prioList"></ol></details>
+  <div class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-area="UWS" aria-selected="true">Upper West Side<span class="ct" id="ctUWS"></span></button>
+    <button class="tab" role="tab" data-area="UES" aria-selected="false">Upper East Side<span class="ct" id="ctUES"></span></button>
+  </div>
   <p class="status" id="status" role="status">Loading…</p>
   <section class="grid" id="grid"></section>
+  <div class="empty" id="emptyArea" hidden>Nothing here yet.</div>
   <div class="yard-wrap" id="yardWrap" hidden>
     <button class="yard-toggle" id="yardBtn" type="button" aria-expanded="false" aria-controls="yard"><span class="tomb-ico">🪦</span><span id="yardLabel">Graveyard</span></button>
     <section class="yard" id="yard" hidden aria-label="Graveyard of apartments no longer available">
@@ -259,12 +271,19 @@ function rentHtml(r){
 }
 const title=r=>`${esc(r.address)}${r.unit?" "+esc(r.unit):""}`;
 
+let area="UWS"; try{area=localStorage.getItem("area")||"UWS"}catch(_){}
+const inArea=r=>(r.area||"UWS")===area;
 function render(){
   const q=$("q").value.trim().toLowerCase();
-  const list=rows.filter(r=>!q||[r.nickname,r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities,(r.tour&&r.tour.notes||[]).join(" ")].join(" ").toLowerCase().includes(q))
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.area===area));
+  ["UWS","UES"].forEach(a=>{const n=rows.filter(r=>(r.area||"UWS")===a&&!r.unavailable).length;$("ct"+a).textContent=n||"";});
+  const all=rows.filter(inArea), liveN=all.filter(r=>!r.unavailable).length;
+  $("status").textContent=all.length?`${all.length} contacted · ${liveN} still available`:"";
+  const list=rows.filter(inArea).filter(r=>!q||[r.nickname,r.address,r.unit,r.building,r.mgmt,r.contact,r.notes,r.amenities,(r.tour&&r.tour.notes||[]).join(" ")].join(" ").toLowerCase().includes(q))
     .sort((a,b)=>(!!a.unavailable-!!b.unavailable)||(!!b.nickname-!!a.nickname)||(!!(b.traction||b.nickname)-!!(a.traction||a.nickname))||((lastOf(b)||{}).date||"").localeCompare((lastOf(a)||{}).date||""));
   const dead=list.filter(r=>r.unavailable);
   renderYard(dead);
+  $("emptyArea").hidden=list.length>0||!!q;
   $("grid").innerHTML=list.filter(r=>!r.unavailable).map(r=>{
     const amen=(r.amenities||"").split(",").map(x=>x.trim()).filter(Boolean);
     const la=lastOf(r), n=(r.activity||[]).length;
@@ -373,12 +392,11 @@ $("detail").addEventListener("click",async e=>{
 });
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("detail").hidden)closeDetail();});
 $("q").addEventListener("input",render);
+$("tabs").addEventListener("click",e=>{const t=e.target.closest(".tab");if(!t)return;area=t.dataset.area;try{localStorage.setItem("area",area)}catch(_){};$("yard").hidden=true;$("yardBtn").setAttribute("aria-expanded",false);render();});
 
 fetch("places.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{
   rows=d.places||[];
   if(d.priorities&&d.priorities.length){$("prio").hidden=false;$("prioList").innerHTML=d.priorities.map(p=>`<li>${esc(p)}</li>`).join("");}
-  const live=rows.filter(r=>!r.unavailable).length;
-  $("status").textContent=`${rows.length} contacted · ${live} still available`;
   render();
 }).catch(()=>{$("status").textContent="Couldn't load the list. Pull down to refresh.";});
 </script>

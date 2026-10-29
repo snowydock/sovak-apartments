@@ -27,7 +27,8 @@
           "to": "Cindy Kieffer",
           "body": "Hi Cindy, this is Mike Sovak. I just sent you a message on StreetEasy about 412 Amsterdam #4F. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this weekend, Saturday or Sunday? Thanks!"
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "rsb-160-406",
@@ -96,7 +97,8 @@
           "to": "Valeriia Hordiienko",
           "body": "Ali toured #3D and #406 at 4:15pm. See tour notes."
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "w88-304-3",
@@ -159,7 +161,8 @@
           "poster": "media/w88-304-3-1.jpg",
           "caption": "Walkthrough"
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "w85-250-9a",
@@ -214,7 +217,8 @@
           "poster": "media/w85-250-9a-1.jpg",
           "caption": "Unit video from Kohler"
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "wea-75-p18b",
@@ -251,7 +255,8 @@
           "All-in-all, really expensive but could technically be viable if absolutely necessary... want to love it more for the price"
         ]
       },
-      "traction": true
+      "traction": true,
+      "area": "UWS"
     },
     {
       "id": "w84-324-2a",
@@ -285,7 +290,8 @@
           "body": "Hi Brian, this is Mike Sovak. I just sent a message on StreetEasy about 324 W 84th #2A. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week? Also, is a 40 lb dog and a cat OK in the building? Thanks!"
         }
       ],
-      "phone": "(212) 362-3080"
+      "phone": "(212) 362-3080",
+      "area": "UWS"
     },
     {
       "id": "rsb-160-3d",
@@ -342,7 +348,8 @@
       },
       "unavailable": true,
       "goneDate": "2026-10-27",
-      "epitaph": "Dark, small, and staring at a parking garage. 2/10."
+      "epitaph": "Dark, small, and staring at a parking garage. 2/10.",
+      "area": "UWS"
     },
     {
       "id": "wea-752-dec-2br",
@@ -369,7 +376,8 @@
           "to": "Wei Zheng (Stellar leasing)",
           "body": "Hi Wei, can you please send me more information on this unit that is coming available in December?\n\nMike S."
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "w79-102-6de",
@@ -412,7 +420,8 @@
       ],
       "unavailable": true,
       "goneDate": "2026-10-25",
-      "epitaph": "One month free. Zero months together."
+      "epitaph": "One month free. Zero months together.",
+      "area": "UWS"
     },
     {
       "id": "w72-269-12b",
@@ -449,7 +458,8 @@
       ],
       "unavailable": true,
       "goneDate": "2026-10-24",
-      "epitaph": "No dogs allowed. Zurie was robbed."
+      "epitaph": "No dogs allowed. Zurie was robbed.",
+      "area": "UWS"
     },
     {
       "id": "riverside-265-6d",
@@ -526,7 +536,8 @@
           "body": "Could any of those other days work to come see it?"
         }
       ],
-      "traction": true
+      "traction": true,
+      "area": "UWS"
     },
     {
       "id": "w75-166-6c",
@@ -554,7 +565,8 @@
           "to": "Cameron Elliott",
           "body": "Hi Cameron, this is Mike Sovak. I just sent you a message on StreetEasy about 166 W 75th #6C. My wife and I are looking at a 12/15 move-in and have everything ready to apply. Could we see it this week or next? If the timing doesn't work, we'd love to hear about anything similar opening up for December. Thanks!"
         }
-      ]
+      ],
+      "area": "UWS"
     },
     {
       "id": "riverside-222-16f",
@@ -637,7 +649,8 @@
           "body": "I don't think I understand. Are you able to help me with the streeteasy listing I texted Johnny about?"
         }
       ],
-      "priority": "Johnny Lee"
+      "priority": "Johnny Lee",
+      "area": "UWS"
     },
     {
       "id": "riverside-280",
@@ -692,7 +705,8 @@
       ],
       "priority": "Sadie Taylor",
       "goneDate": "2026-10-23",
-      "epitaph": "Sadie said sorry. We said no worries. We lied."
+      "epitaph": "Sadie said sorry. We said no worries. We lied.",
+      "area": "UWS"
     },
     {
       "id": "wea-752-2h",
@@ -723,7 +737,8 @@
       "unavailable": true,
       "goneDate": "2026-10-26",
       "epitaph": "Two months free, gone in three days.",
-      "email": "wzheng@stellarmanagement.com"
+      "email": "wzheng@stellarmanagement.com",
+      "area": "UWS"
     }
   ],
   "priorities": [
