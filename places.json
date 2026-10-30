@@ -111,7 +111,7 @@
       "mgmt": "Douglas Elliman",
       "contact": "Monica Penaranda (347) 703-0996 · Monica.Penaranda@elliman.com",
       "link": "https://streeteasy.com/building/304-west-88-street-new_york/3",
-      "notes": "88th between West End and Riverside, 1 at 86th two blocks. 1921 brownstone co-op, 20 units, 4 stories. 3rd floor walk-up (3 flights). 700 sq ft, soaring ceilings, working fireplace, 6 ft north-facing windows, exposed brick, full kitchen, storage, bike rack. Furnished or unfurnished, 1-2 year lease. Heat and water included. Co-op board: $750 application + $50 credit check per person + $250 to management (~$1,100 non-refundable), $1,000 refundable move-out deposit; owner pays the move-in fee. Board approval needed before 12/15, and we're away 12/2-12/11. Scaffold recently removed. Listed 10/13, available now, 35 saves.\nTour set: Mike solo, Thu 10/29 at 6pm (Monica can't do Saturday). Laundry room has 2 washers + 2 stacked dryers.",
+      "notes": "88th between West End and Riverside, 1 at 86th two blocks. 1921 brownstone co-op, 20 units, 4 stories. 3rd floor walk-up (3 flights). 700 sq ft, soaring ceilings, working fireplace, 6 ft north-facing windows, exposed brick, full kitchen, storage, bike rack. Furnished or unfurnished, 1-2 year lease. Heat and water included. Co-op board: $750 application + $50 credit check per person + $250 to management (~$1,100 non-refundable), $1,000 refundable move-out deposit; owner pays the move-in fee. Board approval needed before 12/15, and we're away 12/2-12/11. Scaffold recently removed. Listed 10/13, available now, 35 saves.\nTour set: Mike solo, Thu 10/29 at 6pm (Monica can't do Saturday). Laundry room has 2 washers + 2 stacked dryers.\n10/30: Building does not allow pets, despite the StreetEasy listing saying cats and dogs allowed.",
       "priority": "Monica Penaranda",
       "activity": [
         {
@@ -162,7 +162,10 @@
           "caption": "Walkthrough"
         }
       ],
-      "area": "UWS"
+      "area": "UWS",
+      "unavailable": true,
+      "goneDate": "2026-10-30",
+      "epitaph": "Fireplace, brick, soaring ceilings. No Zurie."
     },
     {
       "id": "w85-250-9a",
