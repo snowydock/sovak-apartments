@@ -1,6 +1,35 @@
 {
   "places": [
     {
+      "id": "e66-219-401",
+      "area": "UES",
+      "address": "219 East 66th Street",
+      "unit": "#401",
+      "building": "Manhattan East",
+      "rent": 4495,
+      "amenities": "Elevator, Gym, Laundry in bldg, Package room, Resident manager, Dishwasher, Windowed kitchen, Pets allowed",
+      "mgmt": "Manhattan Skyline (direct)",
+      "contact": "Manhattan Skyline leasing office, 213 E 66th (917) 312-7348 · Carole Bloom (212) 977-4800",
+      "phone": "(917) 312-7348",
+      "link": "https://streeteasy.com/building/219-east-66-street-manhattan/401",
+      "notes": "66th between 2nd and 3rd, tree-lined block. ~12 min walk to MSK. 6 at 68th 3 min, 4/5/6 + N/R/W at 59th & Lex ~7 min, F/Q at 63rd ~5 min. Manhattan East: 10 adjacent 6-story elevator buildings with gym, laundry room, package room, resident manager, renovated units. Available 12/14, right on our timeline. Open houses by appointment (Thu 11/5 12:30-5 and others). Same landlord has #201 at 209 E 66th for $4,295. No sq ft listed; floor plan in listing.",
+      "priority": "Manhattan Skyline leasing office",
+      "activity": [
+        {
+          "date": "2026-11-04",
+          "channel": "StreetEasy message",
+          "to": "Manhattan Skyline leasing office",
+          "body": "Hi,\n\nMy wife and I are interested in #401 at 219 East 66th. Before anything else, we have a well-behaved 35 lb dalmatian and a declawed cat. Can you confirm they'd be OK?\n\nIf so, the 12/14 availability lines up well with our mid-December move and a 12-month lease. My wife is joining MSK as a nurse, a few blocks away. We're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go.\n\nCould we see it this weekend, Saturday 11/7 or Sunday 11/8? We can apply right away.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "Text",
+          "to": "Manhattan Skyline leasing office",
+          "body": "Hi, this is Mike Sovak. I just sent a message on StreetEasy about 219 E 66th #401. Quick first question: is a 35 lb dalmatian and a declawed cat OK? If so, my wife and I would love to see it this weekend. The 12/14 date works well for us and we have everything ready to apply. Thanks!"
+        }
+      ]
+    },
+    {
       "id": "e74-315-7",
       "area": "UES",
       "address": "315 East 74th Street",
