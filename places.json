@@ -1,6 +1,35 @@
 {
   "places": [
     {
+      "id": "1st-1290-14",
+      "area": "UES",
+      "address": "1290 1st Avenue",
+      "unit": "#14",
+      "building": "Lenox Row (condo)",
+      "rent": 4500,
+      "amenities": "2BR, Virtual doorman, Laundry in bldg, Dishwasher, Exposed brick, Renovated bath",
+      "mgmt": "Vector New York",
+      "contact": "Aaron Lunzer (646) 737-2274 · Eastside Leasing",
+      "phone": "(646) 737-2274",
+      "link": "https://streeteasy.com/building/1290-1-avenue-new_york/14",
+      "notes": "1st Ave around 69th-70th. ~4 min walk to HSS, ~5 min to MSK. Q at 72nd & 2nd ~3 min; 6 at 68th ~8 min; 4/5 at 59th ~11 min. Condo in the Lenox Row complex, so expect condo board approval and building pet rules. Likely a walk-up (no elevator listed). 2BR/1BA, two queen bedrooms with big closets, brick walls, renovated kitchen and bath, living/dining space. Virtual doorman, laundry in building. Rented for $4,500 in 2022; listed $4,250 last year and pulled. Available now, 134 saves, 12 days on market. No sq ft listed.",
+      "priority": "Aaron Lunzer",
+      "activity": [
+        {
+          "date": "2026-11-04",
+          "channel": "StreetEasy message",
+          "to": "Aaron Lunzer",
+          "body": "Hi Aaron,\n\nMy wife and I are interested in #14 at 1290 1st Avenue. Before anything else, we have a well-behaved 35 lb dalmatian and a declawed cat. Since it's a condo, can you confirm the building allows them?\n\nIf so, we're looking for a December 15 move-in and a 12-month lease. My wife is joining MSK as a nurse, a few blocks away. We're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go.\n\nCould we see it this weekend, Saturday 11/7 or Sunday 11/8? We can apply right away.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "Text",
+          "to": "Aaron Lunzer",
+          "body": "Hi Aaron, this is Mike Sovak. I just sent you a message on StreetEasy about 1290 1st Ave #14. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I would love to see it this weekend. We're looking at a 12/15 move-in and have everything ready to apply. Thanks!"
+        }
+      ]
+    },
+    {
       "id": "e77-403-8",
       "area": "UES",
       "address": "403 East 77th Street",
