@@ -1,6 +1,27 @@
 {
   "places": [
     {
+      "id": "e77-403-8",
+      "area": "UES",
+      "address": "403 East 77th Street",
+      "unit": "#8",
+      "rent": 5395,
+      "amenities": "2BR/2BA, In-unit W/D, Dishwasher, Live-in super, Laundry in bldg, Pets friendly",
+      "mgmt": "TriBro NYC",
+      "contact": "TriBro Group (numbers hidden on StreetEasy: tap Show phone number)",
+      "link": "https://streeteasy.com/building/403-east-77-street-new_york/8",
+      "notes": "77th between 1st and York. ~8 min walk to HSS, ~12-15 min to MSK. Q at 72nd or 86th ~7 min, 6 at 77th ~8 min, 4/5 at 86th ~12 min. 1920 walk-up, 15 units, 5 stories, no elevator; ask which floor. 2BR/2BA, 5 rooms, W/D in unit. $5,395 total incl. required fees. Available 11/30. 191 saves in 9 days. Rent history shows #8 rented for $3,200 in March 2026; ask whether that was the same unit/layout and why it's back after 8 months. No sq ft listed.",
+      "priority": "TriBro Group",
+      "activity": [
+        {
+          "date": "2026-11-04",
+          "channel": "StreetEasy message",
+          "to": "TriBro Group",
+          "body": "Hi,\n\nMy wife and I are interested in #8 at 403 East 77th. Before anything else, we have a well-behaved 35 lb dalmatian and a declawed cat. Can you confirm they'd be OK?\n\nIf so, we're looking for a December 15 move-in and a 12-month lease. My wife is joining MSK as a nurse, a few blocks away. We're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go.\n\nCould we see it this weekend, Saturday 11/7 or Sunday 11/8? We can apply right away.\n\nThanks,\nMike Sovak"
+        }
+      ]
+    },
+    {
       "id": "e66-219-401",
       "area": "UES",
       "address": "219 East 66th Street",
