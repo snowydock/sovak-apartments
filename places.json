@@ -1,6 +1,34 @@
 {
   "places": [
     {
+      "id": "e74-315-7",
+      "area": "UES",
+      "address": "315 East 74th Street",
+      "unit": "#7",
+      "rent": 3600,
+      "amenities": "In-unit W/D, Virtual doorman, New stainless appliances, Pets allowed",
+      "mgmt": "Compass",
+      "contact": "Edward Sandoval (201) 640-2943",
+      "phone": "(201) 640-2943",
+      "link": "https://streeteasy.com/building/315-east-74-street-new_york/7",
+      "notes": "74th between 1st and 2nd. ~8 min walk to HSS, ~12 min to MSK. Q at 72nd & 2nd ~3 min; 6 at 77th. 1910 walk-up, 17 units, 5 stories, no elevator; ask which floor. Renovated, W/D in unit, bedroom fits a queen (so smallish). Photos are virtually staged. Rented $3,350 in Aug 2024. Listed 11/2 at $3,500, raised to $3,600 a day later; 79 saves. Available 12/1. No sq ft listed.",
+      "priority": "Edward Sandoval",
+      "activity": [
+        {
+          "date": "2026-11-04",
+          "channel": "StreetEasy message",
+          "to": "Edward Sandoval",
+          "body": "Hi Edward,\n\nMy wife and I are interested in #7 at 315 East 74th. Before anything else, we have a well-behaved 35 lb dalmatian and a declawed cat. Can you confirm they'd be OK?\n\nIf so, we're looking for a December 15 move-in and a 12-month lease. My wife is joining MSK as a nurse, a few blocks away. We're both employed full-time with income well above 40x rent and strong credit, and our application documents are ready to go.\n\nCould we see it this weekend, Saturday 11/7 or Sunday 11/8? We can apply right away.\n\nThanks,\nMike Sovak"
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "Text",
+          "to": "Edward Sandoval",
+          "body": "Hi Edward, this is Mike Sovak. I just sent you a message on StreetEasy about 315 E 74th #7. Quick first question: is a 35 lb dalmatian and a declawed cat OK? If so, my wife and I would love to see it this weekend. We're looking at a 12/15 move-in and have everything ready to apply. Thanks!"
+        }
+      ]
+    },
+    {
       "id": "e74-400-3",
       "area": "UES",
       "address": "400 East 74th Street",
