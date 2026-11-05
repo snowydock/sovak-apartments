@@ -65,7 +65,7 @@
       "rent": 3900,
       "amenities": "In-unit W/D, Dishwasher, Exposed brick, Renovated kitchen, Pets case by case",
       "mgmt": "Living New York",
-      "contact": "Jed Wilder (917) 881-6291 · Jake Kerrigan",
+      "contact": "Jed Wilder (917) 881-6291 · Jake Kerrigan · jake.kerrigan@livingny.com",
       "phone": "(917) 881-6291",
       "link": "https://streeteasy.com/building/400-east-74th-street-new_york/3",
       "notes": "74th and 1st Ave. ~6 min walk to HSS, ~10 min to MSK (York & 67th). Q at 72nd & 2nd ~4 min; 6 at 77th or 68th. 1910 building, 25 units, 6 stories, likely a walk-up (no elevator listed), 3rd floor. In-unit W/D, renovated kitchen, exposed brick. Photos are a representative unit; they send a video of the real one on request. Rented for $3,500 in Nov 2024. Listed 11/3, available now, 11 saves. No sq ft listed.",
@@ -82,8 +82,23 @@
           "channel": "Text",
           "to": "Jed Wilder",
           "body": "Hi Jed, this is Mike Sovak. I just sent you a message on StreetEasy about 400 E 74th #3. Quick first question: would the landlord consider a 35 lb dalmatian and a declawed cat? If so, could you send the video of the unit? My wife and I would love to see it this weekend. We're looking at a 12/15 move-in and have everything ready to apply. Thanks!"
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "Their reply",
+          "to": "Jake Kerrigan",
+          "body": "Hi there,\n\nThank you for reaching out!\n\nHere is a video of the apartment available for rent: [Google Drive link]\n\nIt is $3,900 per month and is available immediately\n\nThe apartment is on the 2nd floor of a WALK-UP building.\n\nWould you like to view the apartment in person?\n\nPlease let me know either way.\n\nThanks!"
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "Email",
+          "to": "Jake Kerrigan",
+          "body": "Hi Jake,\n\nThanks so much for sending the video and the quick reply. After watching it, the space is a bit smaller than we need, so we'll pass on this one. If anything larger opens up nearby for mid-December, we'd love to hear about it.\n\nThanks again,\nMike"
         }
-      ]
+      ],
+      "unavailable": true,
+      "goneDate": "2026-11-04",
+      "epitaph": "Washer/dryer in unit. Room for little else."
     },
     {
       "id": "e65-320-626",
