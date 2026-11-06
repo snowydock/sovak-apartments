@@ -81,7 +81,7 @@
       "contact": "Manhattan Skyline leasing office, 213 E 66th (917) 312-7348 · Carole Bloom (212) 977-4800",
       "phone": "(917) 312-7348",
       "link": "https://streeteasy.com/building/219-east-66-street-manhattan/401",
-      "notes": "66th between 2nd and 3rd, tree-lined block. ~12 min walk to MSK. 6 at 68th 3 min, 4/5/6 + N/R/W at 59th & Lex ~7 min, F/Q at 63rd ~5 min. Manhattan East: 10 adjacent 6-story elevator buildings with gym, laundry room, package room, resident manager, renovated units. Available 12/14, right on our timeline. Open houses by appointment (Thu 11/5 12:30-5 and others). Same landlord has #201 at 209 E 66th for $4,295. No sq ft listed; floor plan in listing.",
+      "notes": "66th between 2nd and 3rd, tree-lined block. ~12 min walk to MSK. 6 at 68th 3 min, 4/5/6 + N/R/W at 59th & Lex ~7 min, F/Q at 63rd ~5 min. Manhattan East: 10 adjacent 6-story elevator buildings with gym, laundry room, package room, resident manager, renovated units. Available 12/14, right on our timeline. Open houses by appointment (Thu 11/5 12:30-5 and others). Same landlord has #201 at 209 E 66th for $4,295. No sq ft listed; floor plan in listing. DEAD 11/6: office texted they only allow one pet.",
       "priority": "Manhattan Skyline leasing office",
       "activity": [
         {
@@ -101,6 +101,12 @@
           "channel": "Text",
           "to": "Manhattan East office (917) 312-7348",
           "body": "Hi, just following up. Any chance we could see it this weekend? Thanks!"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Manhattan East office (917) 312-7348",
+          "body": "Hi Mike, sorry we only allow one pet. Thanks."
         }
       ]
     },
@@ -1061,6 +1067,87 @@
           "channel": "Text",
           "to": "Michael Cuniberti (914) 641-4355",
           "body": "Hi Michael, this is Mike Sovak. I just sent you a message on StreetEasy about 1143 1st Ave #4C. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I would love to see it this weekend. Thanks!"
+        }
+      ]
+    },
+    {
+      "id": "e75-305-5",
+      "area": "UES",
+      "address": "305 East 75th Street #5",
+      "unit": "5",
+      "building": "Walk-up (Tissa Management)",
+      "rent": "$3,995",
+      "sqft": "",
+      "amenities": "2BR/1BA",
+      "mgmt": "Tissa Management LLC",
+      "contact": "Isaac Rosen (Managing Director), ir@tissamgmt.com",
+      "phone": "(718) 928-7480",
+      "link": "https://streeteasy.com/building/305-east-75-street-new_york/5",
+      "notes": "2BR/1BA, Lenox Hill, $3,995. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run (details from confirmation email; StreetEasy itself was behind a bot check at 12pm). Isaac asked when we want to see it but has not answered the pet question yet. Also got an automated SMS from (571) 581-6101 with the same reply.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Tissa Management",
+          "body": "Hi there, my wife and I are interested in #5. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Isaac Rosen",
+          "body": "Hi thanks for reaching out regarding 305 East 75th #5. When would you like to come see the unit? (Email 11:11am, also auto-SMS from (571) 581-6101.)"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Email",
+          "to": "Isaac Rosen ir@tissamgmt.com",
+          "body": "Hi Isaac, thanks for getting back to me! We could come by Saturday 11/7 or Sunday 11/8 at any time, or Monday 11/9 after 5pm. Whatever works best for you. Before we come, can you confirm the building allows a 35 lb dalmatian and a declawed cat? Thanks, Mike S."
+        }
+      ]
+    },
+    {
+      "id": "e79-542-5s",
+      "area": "UES",
+      "address": "542 East 79th Street #5S",
+      "unit": "5S",
+      "building": "City & Suburban (East River views)",
+      "rent": "$3,587",
+      "sqft": "",
+      "amenities": "2BR/1BA",
+      "mgmt": "City & Suburban",
+      "contact": "City & Suburban Leasing Office",
+      "phone": "",
+      "link": "https://streeteasy.com/building/542-east-79-street-new_york/5s",
+      "notes": "2BR/1BA, $3,587, near York/East End at 79th. StreetEasy inquiry sent 11/6 ~11:10 by an earlier sweep run; no phone captured, no text sent.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "City & Suburban Leasing Office",
+          "body": "Hi there, my wife and I are interested in #5S. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
+        }
+      ]
+    },
+    {
+      "id": "e78-300-4n",
+      "area": "UES",
+      "address": "300 East 78th Street #4N",
+      "unit": "4N",
+      "building": "",
+      "rent": "$3,750",
+      "sqft": "",
+      "amenities": "2BR/1BA",
+      "mgmt": "FIND Real Estate",
+      "contact": "Ozan Yuzen",
+      "phone": "",
+      "link": "https://streeteasy.com/building/300-east-78-street-new_york/4n",
+      "notes": "2BR/1BA, $3,750, 78th & 2nd. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run; no phone captured, no text sent.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Ozan Yuzen",
+          "body": "Hi Ozan, my wife and I are interested in #4N. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
         }
       ]
     }
