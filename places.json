@@ -984,6 +984,85 @@
       "epitaph": "Two months free, gone in three days.",
       "email": "wzheng@stellarmanagement.com",
       "area": "UWS"
+    },
+    {
+      "id": "e71-330-5j",
+      "area": "UES",
+      "address": "330 East 71st Street #5J",
+      "unit": "5J",
+      "building": "Pre-war Art Deco elevator building",
+      "rent": "$4,500",
+      "sqft": "750",
+      "amenities": "Elevator, live-in super, laundry in building, dishwasher",
+      "mgmt": "JMG Properties",
+      "contact": "Jonathan Gruber",
+      "phone": "(917) 353-3161",
+      "link": "https://streeteasy.com/building/330-east-71-street-new_york/5j",
+      "notes": "1BR, south-facing, available now. Listed 11/5 (rented $3,650 in 2024). Open house Sat 11/7 11:30-12:30.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Jonathan Gruber",
+          "body": "Hi Jonathan, my wife and I are interested in #5J. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "Jonathan Gruber (917) 353-3161",
+          "body": "Hi Jonathan, this is Mike Sovak. I just sent you a message on StreetEasy about 330 E 71st #5J. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I would love to see it this weekend. Thanks!"
+        }
+      ]
+    },
+    {
+      "id": "e75-300-5g",
+      "area": "UES",
+      "address": "300 East 75th Street #5G",
+      "unit": "5G",
+      "building": "The Fairmont",
+      "rent": "$5,495",
+      "amenities": "Doorman building, separate kitchen, stainless appliances",
+      "mgmt": "Glenwood",
+      "contact": "Glenwood leasing",
+      "phone": "(888) 904-5306 (call center, not textable)",
+      "link": "https://streeteasy.com/building/the-fairmont/5g",
+      "notes": "1BR, queen bedroom, available now. Listed 11/5. Fees: one month rent + one month security.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Glenwood leasing",
+          "body": "Hi there, my wife and I are interested in #5G. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
+        }
+      ]
+    },
+    {
+      "id": "1st-1143-4c",
+      "area": "UES",
+      "address": "1143 1st Avenue #4C",
+      "unit": "4C",
+      "building": "Walk-up (4th floor)",
+      "rent": "$4,300",
+      "amenities": "2BR, dishwasher, microwave",
+      "mgmt": "Houlihan Parnes Properties",
+      "contact": "Michael Cuniberti",
+      "phone": "(914) 641-4355",
+      "link": "https://streeteasy.com/building/1143-1-avenue-new_york/4c",
+      "notes": "2BR/1BA, 4th-floor walk-up, available now. Listed 11/3.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Michael Cuniberti",
+          "body": "Hi Michael, my wife and I are interested in #4C. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, we'd love to see it this weekend. My wife is joining MSK as a nurse a few blocks away, and we're looking at a 12/15 move-in with everything ready to apply. Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "Michael Cuniberti (914) 641-4355",
+          "body": "Hi Michael, this is Mike Sovak. I just sent you a message on StreetEasy about 1143 1st Ave #4C. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I would love to see it this weekend. Thanks!"
+        }
+      ]
     }
   ],
   "priorities": [
