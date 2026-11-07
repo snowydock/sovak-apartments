@@ -1110,7 +1110,7 @@
       "contact": "Isaac Rosen (Managing Director), ir@tissamgmt.com",
       "phone": "(718) 928-7480",
       "link": "https://streeteasy.com/building/305-east-75-street-new_york/5",
-      "notes": "2BR/1BA, Lenox Hill, $3,995. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run (details from confirmation email; StreetEasy itself was behind a bot check at 12pm). Isaac replied \"That is fine\" to our pet question. VIEWING: Sunday 11/8, exact time not locked yet (we offered noon to 3pm). Second contact by text: (571) 581-6101.",
+      "notes": "2BR/1BA, Lenox Hill, $3,995. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run (details from confirmation email; StreetEasy itself was behind a bot check at 12pm). Isaac replied \"That is fine\" to our pet question. VIEWING: Sunday 11/8, proposed noon by text 11/7; waiting on Isaac to confirm. Second contact by text: (571) 581-6101.",
       "activity": [
         {
           "date": "2026-11-06",
@@ -1159,6 +1159,12 @@
           "channel": "Their reply",
           "to": "Tissa (text, (571) 581-6101)",
           "body": "Should work. Sunday what time?"
+        },
+        {
+          "date": "2026-11-07",
+          "channel": "Text",
+          "to": "Tissa (571) 581-6101",
+          "body": "Noon on Sunday works great. See you then! Mike"
         }
       ],
       "traction": true
