@@ -1013,7 +1013,7 @@
       "contact": "Jonathan Gruber",
       "phone": "(917) 353-3161",
       "link": "https://streeteasy.com/building/330-east-71-street-new_york/5j",
-      "notes": "1BR, south-facing, available now. Listed 11/5 (rented $3,650 in 2024). Open house Sat 11/7 11:30-12:30. VIEWING: Sat 11/7 at 12:45, meet Jonathan in the lobby.",
+      "notes": "1BR, south-facing, available now. Listed 11/5 (rented $3,650 in 2024). Open house Sat 11/7 11:30-12:30. Toured 11/7. Landlord wants Dec 1 start.",
       "activity": [
         {
           "date": "2026-11-06",
@@ -1044,9 +1044,22 @@
           "channel": "Their reply",
           "to": "Jonathan Gruber",
           "body": "I will meet you in the lobby. If you do not see me please text me as I will already be in the building."
+        },
+        {
+          "date": "2026-11-07",
+          "channel": "Tour",
+          "to": "Jonathan Gruber",
+          "body": "Toured #5J at 12:45. Went great. Would need a Dec 1 move-in."
         }
       ],
-      "traction": true
+      "traction": true,
+      "nickname": "The Art Deco",
+      "tour": {
+        "by": "Mike & Ali",
+        "notes": [
+          "Toured Sat 11/7 with Jonathan. Went great."
+        ]
+      }
     },
     {
       "id": "e75-300-5g",
