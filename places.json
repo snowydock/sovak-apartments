@@ -1050,6 +1050,12 @@
           "channel": "Tour",
           "to": "Jonathan Gruber",
           "body": "Toured #5J at 12:45. Went great. Would need a Dec 1 move-in."
+        },
+        {
+          "date": "2026-11-07",
+          "channel": "Their reply",
+          "from": "Jonathan Gruber (email)",
+          "body": "Emailed the rental application documents (3 emails, 4:18-4:21pm): Application Rental.doc, apt verification request.pdf, DOC090.pdf. No reply sent; application is Mike's call."
         }
       ],
       "traction": true,
