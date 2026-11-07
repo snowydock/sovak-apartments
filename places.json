@@ -108,7 +108,10 @@
           "to": "Manhattan East office (917) 312-7348",
           "body": "Hi Mike, sorry we only allow one pet. Thanks."
         }
-      ]
+      ],
+      "unavailable": true,
+      "goneDate": "2026-11-06",
+      "epitaph": "One pet only. Zurie and the cat come as a set."
     },
     {
       "id": "e74-315-7",
@@ -217,7 +220,7 @@
       "contact": "Allison Block (917) 684-4780",
       "phone": "(917) 684-4780",
       "link": "https://streeteasy.com/building/the-bakery-building-320-east-65-street-new_york/626",
-      "notes": "65th between 1st and 2nd, Lenox Hill. About 5-7 min walk to MSK (York & 67th). 4/5/6 + N/R/W at 59th & Lex ~6 min, F/Q at 63rd, Q at 72nd. 1930 building, 71 units, elevator. 1BR/1.5BA triplex: kitchen, dining and powder room on entry level, living room with decorative brick fireplace above, bedroom and full bath on top, plus a big private terrace. $5,200 total including required fees. Available 12/1, currently tenant-occupied (some photos virtually staged). Pets case by case. Listed 11/3, 36 saves. Rented for $3,400 in 2020. No sq ft listed; triplex stairs inside the unit. Pets case by case: $350 move-in fee, $25/mo + $15/mo pet rent. Agent away weekend of 11/7.",
+      "notes": "65th between 1st and 2nd, Lenox Hill. About 5-7 min walk to MSK (York & 67th). 4/5/6 + N/R/W at 59th & Lex ~6 min, F/Q at 63rd, Q at 72nd. 1930 building, 71 units, elevator. 1BR/1.5BA triplex: kitchen, dining and powder room on entry level, living room with decorative brick fireplace above, bedroom and full bath on top, plus a big private terrace. $5,200 total including required fees. Available 12/1, currently tenant-occupied (some photos virtually staged). Pets case by case. Listed 11/3, 36 saves. Rented for $3,400 in 2020. No sq ft listed; triplex stairs inside the unit. Pets case by case: $350 move-in fee, $25/mo + $15/mo pet rent. Agent away weekend of 11/7. VIEWING: tentatively Mon 11/9 after 5pm, Allison to confirm Monday.",
       "priority": "Allison Block",
       "activity": [
         {
@@ -243,6 +246,12 @@
           "channel": "Email",
           "to": "Allison Block",
           "body": "Thanks so much, and the pet policy works for us. Would any of these work? Monday 11/9 or Thursday 11/12 after 5pm, or anytime Saturday 11/14 or Sunday 11/15."
+        },
+        {
+          "date": "2026-11-07",
+          "channel": "Their reply",
+          "to": "Allison Block (email)",
+          "body": "We can shoot for Monday after 5pm. Lets confirm on Monday."
         }
       ],
       "nickname": "The Bakery",
@@ -994,17 +1003,17 @@
     {
       "id": "e71-330-5j",
       "area": "UES",
-      "address": "330 East 71st Street #5J",
-      "unit": "5J",
+      "address": "330 East 71st Street",
+      "unit": "#5J",
       "building": "Pre-war Art Deco elevator building",
-      "rent": "$4,500",
-      "sqft": "750",
-      "amenities": "Elevator, live-in super, laundry in building, dishwasher",
+      "rent": 4500,
+      "sqft": 750,
+      "amenities": "Elevator, Live-in super, Laundry in building, Dishwasher",
       "mgmt": "JMG Properties",
       "contact": "Jonathan Gruber",
       "phone": "(917) 353-3161",
       "link": "https://streeteasy.com/building/330-east-71-street-new_york/5j",
-      "notes": "1BR, south-facing, available now. Listed 11/5 (rented $3,650 in 2024). Open house Sat 11/7 11:30-12:30.",
+      "notes": "1BR, south-facing, available now. Listed 11/5 (rented $3,650 in 2024). Open house Sat 11/7 11:30-12:30. VIEWING: Sat 11/7 at 12:45, meet Jonathan in the lobby.",
       "activity": [
         {
           "date": "2026-11-06",
@@ -1017,17 +1026,36 @@
           "channel": "Text",
           "to": "Jonathan Gruber (917) 353-3161",
           "body": "Hi Jonathan, this is Mike Sovak. I just sent you a message on StreetEasy about 330 E 71st #5J. Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I would love to see it this weekend. Thanks!"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Jonathan Gruber",
+          "body": "I can show you tomorrow at 12:45 please let me know if you can make that work"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "Jonathan Gruber",
+          "body": "Yes we will be there!"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Jonathan Gruber",
+          "body": "I will meet you in the lobby. If you do not see me please text me as I will already be in the building."
         }
-      ]
+      ],
+      "traction": true
     },
     {
       "id": "e75-300-5g",
       "area": "UES",
-      "address": "300 East 75th Street #5G",
-      "unit": "5G",
+      "address": "300 East 75th Street",
+      "unit": "#5G",
       "building": "The Fairmont",
-      "rent": "$5,495",
-      "amenities": "Doorman building, separate kitchen, stainless appliances",
+      "rent": 5495,
+      "amenities": "Doorman building, Separate kitchen, Stainless appliances",
       "mgmt": "Glenwood",
       "contact": "Glenwood leasing",
       "phone": "(888) 904-5306 (call center, not textable)",
@@ -1045,11 +1073,11 @@
     {
       "id": "1st-1143-4c",
       "area": "UES",
-      "address": "1143 1st Avenue #4C",
-      "unit": "4C",
+      "address": "1143 1st Avenue",
+      "unit": "#4C",
       "building": "Walk-up (4th floor)",
-      "rent": "$4,300",
-      "amenities": "2BR, dishwasher, microwave",
+      "rent": 4300,
+      "amenities": "2BR, Dishwasher, Microwave",
       "mgmt": "Houlihan Parnes Properties",
       "contact": "Michael Cuniberti",
       "phone": "(914) 641-4355",
@@ -1073,17 +1101,16 @@
     {
       "id": "e75-305-5",
       "area": "UES",
-      "address": "305 East 75th Street #5",
-      "unit": "5",
+      "address": "305 East 75th Street",
+      "unit": "#5",
       "building": "Walk-up (Tissa Management)",
-      "rent": "$3,995",
-      "sqft": "",
+      "rent": 3995,
       "amenities": "2BR/1BA",
       "mgmt": "Tissa Management LLC",
       "contact": "Isaac Rosen (Managing Director), ir@tissamgmt.com",
       "phone": "(718) 928-7480",
       "link": "https://streeteasy.com/building/305-east-75-street-new_york/5",
-      "notes": "2BR/1BA, Lenox Hill, $3,995. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run (details from confirmation email; StreetEasy itself was behind a bot check at 12pm). Isaac asked when we want to see it but has not answered the pet question yet. Also got an automated SMS from (571) 581-6101 with the same reply.",
+      "notes": "2BR/1BA, Lenox Hill, $3,995. StreetEasy inquiry sent 11/6 ~11:09 by an earlier sweep run (details from confirmation email; StreetEasy itself was behind a bot check at 12pm). Isaac replied \"That is fine\" to our pet question. VIEWING: Sunday 11/8, exact time not locked yet (we offered noon to 3pm). Second contact by text: (571) 581-6101.",
       "activity": [
         {
           "date": "2026-11-06",
@@ -1102,17 +1129,47 @@
           "channel": "Email",
           "to": "Isaac Rosen ir@tissamgmt.com",
           "body": "Hi Isaac, thanks for getting back to me! We could come by Saturday 11/7 or Sunday 11/8 at any time, or Monday 11/9 after 5pm. Whatever works best for you. Before we come, can you confirm the building allows a 35 lb dalmatian and a declawed cat? Thanks, Mike S."
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Isaac Rosen (email)",
+          "body": "That is fine. What time Sunday works for you?"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Email",
+          "to": "Isaac Rosen",
+          "body": "We can be flexible, sometime between noon and 3pm?"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Tissa (text, (571) 581-6101)",
+          "body": "Hi thanks for reaching out regarding 305 East 75th #5. When would you like to come see the unit?"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "Tissa (571) 581-6101",
+          "body": "Hi, thanks! Quick first question: does the building allow a 35 lb dalmatian and a declawed cat? If so, my wife and I could come see #5 this Saturday 11/7 or Sunday 11/8, any time that works for you. Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Their reply",
+          "to": "Tissa (text, (571) 581-6101)",
+          "body": "Should work. Sunday what time?"
         }
-      ]
+      ],
+      "traction": true
     },
     {
       "id": "e79-542-5s",
       "area": "UES",
-      "address": "542 East 79th Street #5S",
-      "unit": "5S",
+      "address": "542 East 79th Street",
+      "unit": "#5S",
       "building": "City & Suburban (East River views)",
-      "rent": "$3,587",
-      "sqft": "",
+      "rent": 3587,
       "amenities": "2BR/1BA",
       "mgmt": "City & Suburban",
       "contact": "City & Suburban Leasing Office",
@@ -1131,11 +1188,10 @@
     {
       "id": "e78-300-4n",
       "area": "UES",
-      "address": "300 East 78th Street #4N",
-      "unit": "4N",
+      "address": "300 East 78th Street",
+      "unit": "#4N",
       "building": "",
-      "rent": "$3,750",
-      "sqft": "",
+      "rent": 3750,
       "amenities": "2BR/1BA",
       "mgmt": "FIND Real Estate",
       "contact": "Ozan Yuzen",
@@ -1154,35 +1210,60 @@
     {
       "id": "e86-305-9te",
       "area": "UES",
-      "address": "305 East 86th Street #9TE",
-      "unit": "9TE",
+      "address": "305 East 86th Street",
+      "unit": "#9TE",
       "building": "Yorkshire Towers",
-      "rent": "$6,295",
-      "net": "$5,945 net effective (1 month free, 18-month lease)",
-      "sqft": "745",
-      "amenities": "2BR/2BA (convertible 2, 1BR + full den), W/D in unit, private terrace, doorman, elevator, gym, pool, garage, storage, garden",
+      "rent": 6295,
+      "net": 5945,
+      "sqft": 745,
+      "amenities": "2BR/2BA (convertible 2, 1BR + full den), W/D in unit, Private terrace, Doorman, Elevator, Gym, Pool, Garage, Storage, Garden",
       "mgmt": "UES Management",
       "contact": "Leasing Agents",
       "phone": "(646) 833-3300",
       "link": "https://streeteasy.com/building/yorkshire-towers/9te",
-      "notes": "Pets allowed, cats and dogs. Gut-renovated, herringbone floors. Available now, listed 11/6. Open house Sun 11/8 1:00-2:45 by appt. Q at 86th St under 500 ft. Last rented $5,140 in 2022. Note: 18-month lease, not 12.",
-      "activity": []
+      "notes": "Pets allowed, cats and dogs. Gut-renovated, herringbone floors. Available now, listed 11/6. Open house Sun 11/8 1:00-2:45 by appt. Q at 86th St under 500 ft. Last rented $5,140 in 2022. Note: 18-month lease, not 12. Net effective: net effective (1 month free, 18-month lease.",
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "UES Management leasing",
+          "body": "Hi there, my wife and I are interested in #9TE. We saw cats and dogs are allowed. Just to confirm, we have a 35 lb dalmatian and a declawed cat. Could we grab a slot at Sunday's open house, ideally between 1 and 2:45? My wife is joining MSK as a nurse, and we're looking at a mid-December move-in with everything ready to apply. Also, is a 12-month lease an option? Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "UES Management (646) 833-3300",
+          "body": "Hi, this is Mike Sovak. I just sent a message on StreetEasy about 305 E 86th #9TE. My wife and I have a 35 lb dalmatian and a declawed cat, and we'd love to see it at Sunday's open house if there's a slot. Thanks!"
+        }
+      ]
     },
     {
       "id": "e84-315-22",
       "area": "UES",
-      "address": "315 East 84th Street #22",
-      "unit": "22",
+      "address": "315 East 84th Street",
+      "unit": "#22",
       "building": "6-story walk-up (1920), 35 units",
-      "rent": "$5,495",
-      "sqft": "",
-      "amenities": "2BR/1BA, W/D, dishwasher, microwave, marble bath, high ceilings",
+      "rent": 5495,
+      "amenities": "2BR/1BA, W/D, Dishwasher, Microwave, Marble bath, High ceilings",
       "mgmt": "Copperwood Real Estate",
       "contact": "Copperwood Real Estate",
       "phone": "(212) 390-1800",
       "link": "https://streeteasy.com/building/315-east-84-street-new_york/22",
       "notes": "Pets allowed. Brand-new 4th-floor 2BR between 1st and 2nd Ave, likely a walk-up. Available now, listed 11/5. Q at 86th under 500 ft. Rented $4,495 in Oct 2024, so +$1,000 this year.",
-      "activity": []
+      "activity": [
+        {
+          "date": "2026-11-06",
+          "channel": "StreetEasy message",
+          "to": "Copperwood Real Estate",
+          "body": "Hi there, my wife and I are interested in #22. We saw pets are allowed. Just to confirm, we have a 35 lb dalmatian and a declawed cat. Could we see it this weekend? My wife is joining MSK as a nurse, and we're looking at a mid-December move-in with everything ready to apply. Thanks, Mike"
+        },
+        {
+          "date": "2026-11-06",
+          "channel": "Text",
+          "to": "Copperwood (212) 390-1800",
+          "body": "Hi, this is Mike Sovak. I just sent a message on StreetEasy about 315 E 84th #22. My wife and I have a 35 lb dalmatian and a declawed cat, and we'd love to see it this weekend if there's a time. Thanks!"
+        }
+      ]
     }
   ],
   "priorities": [
